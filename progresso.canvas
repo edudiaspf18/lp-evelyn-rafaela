@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "4cf2f312a93ac877",
+      "id": "232d04b9bdd2d248",
       "type": "text",
       "x": 0,
       "y": 330,
@@ -11,7 +11,7 @@
       "color": "4"
     },
     {
-      "id": "2fdd870a356aece2",
+      "id": "3af8469143948b2f",
       "type": "text",
       "x": 380,
       "y": 330,
@@ -21,7 +21,7 @@
       "color": "4"
     },
     {
-      "id": "cd52f27b8d570952",
+      "id": "d5078411f0a17107",
       "type": "text",
       "x": 760,
       "y": 330,
@@ -31,7 +31,7 @@
       "color": "4"
     },
     {
-      "id": "e59e8553fa8acc31",
+      "id": "9763755bf65bb3d7",
       "type": "text",
       "x": 1140,
       "y": 330,
@@ -41,7 +41,7 @@
       "color": "4"
     },
     {
-      "id": "ad66dc21a3addc58",
+      "id": "29d3ebda9239f843",
       "type": "text",
       "x": 1520,
       "y": 330,
@@ -51,17 +51,17 @@
       "color": "4"
     },
     {
-      "id": "b6d1ac03981f9776",
+      "id": "c60d0e40a211b49b",
       "type": "text",
       "x": 0,
       "y": 770,
       "width": 320,
       "height": 360,
-      "text": "## F5 · Seções\n**CONCLUÍDA** (10/10)\n\n- [x] T5.1 Header (logo + âncoras + CTA; menu mobile)\n- [x] T5.2 Hero\n- [x] T5.3 Diferenciais\n- [x] T5.4 Services\n- [x] T5.5 About\n- [x] T5.6 Testimonials (condicional)\n- [x] T5.7 FAQ\n- [x] T5.8 FinalCta\n- [x] T5.9 Footer (Instagram + mapa)\n- [x] T5.10 Montar page.tsx",
+      "text": "## F5 · Seções\n**CONCLUÍDA** (12/12)\n\n- [x] T5.11 Redesign editorial: manifesto tipográfico, s…\n- [x] T5.12 Animações CSS (sem JS): entrada no hero, más…\n- [x] T5.1 Header (logo + âncoras + CTA; menu mobile)\n- [x] T5.2 Hero\n- [x] T5.3 Diferenciais\n- [x] T5.4 Services\n- [x] T5.5 About\n- [x] T5.6 Testimonials (condicional)\n- [x] T5.7 FAQ\n- [x] T5.8 FinalCta\n- [x] T5.9 Footer (Instagram + mapa)\n- [x] T5.10 Montar page.tsx",
       "color": "4"
     },
     {
-      "id": "c10773673ba327ea",
+      "id": "9660c36b17ebd871",
       "type": "text",
       "x": 380,
       "y": 770,
@@ -71,7 +71,7 @@
       "color": "4"
     },
     {
-      "id": "69e3b824e7000b02",
+      "id": "a7df9f385eaab44a",
       "type": "text",
       "x": 760,
       "y": 770,
@@ -81,7 +81,7 @@
       "color": "4"
     },
     {
-      "id": "ac4b9d44874d2af5",
+      "id": "150fc8c4fa3efa97",
       "type": "text",
       "x": 1140,
       "y": 770,
@@ -91,7 +91,7 @@
       "color": "3"
     },
     {
-      "id": "c11fd2a0a7813629",
+      "id": "3a1986c9b363fef8",
       "type": "text",
       "x": 1520,
       "y": 770,
@@ -100,17 +100,17 @@
       "text": "## F9 · Deploy\n**A FAZER** (0/7)\n\n- [ ] T9.0 Go-live blocker: substituir depoimentos DEMO…\n- [ ] T9.1 VPS Ubuntu, Node LTS, PM2 (pm2 start npm --n…\n- [ ] T9.2 Nginx proxy reverso 80/443 → 3000\n- [ ] T9.3 Certbot (Let's Encrypt) + renovação\n- [ ] T9.4 GitHub Actions: SSH → git pull → npm ci && n…\n- [ ] T9.5 Secrets no GitHub (host, user, key). .env de…\n- [ ] T9.6 DNS do domínio + smoke test em produção"
     },
     {
-      "id": "1db913d66373311a",
+      "id": "8c537c03a48f25d6",
       "type": "text",
       "x": 0,
       "y": 0,
       "width": 700,
       "height": 280,
       "color": "4",
-      "text": "# LP Evelyn Rafaela · Progresso\n**50/59 tarefas (85%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
+      "text": "# LP Evelyn Rafaela · Progresso\n**52/61 tarefas (85%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
     },
     {
-      "id": "a3943c56000f979b",
+      "id": "9f43b63c808bfc47",
       "type": "text",
       "x": 760,
       "y": 0,
@@ -120,7 +120,7 @@
       "text": "## AGORA\n**Tarefa:** T8.7 Revisão Tech Lead (re-render, memory leak, p…\n**Próxima:** T8.9 README.md em português (ver §0 README). Comm…\n\n_Atualizado: 2026-10-01_"
     },
     {
-      "id": "9e5a7b9e10fc9a2c",
+      "id": "d9c78f8913f7c05c",
       "type": "text",
       "x": 1240,
       "y": 0,
@@ -132,74 +132,74 @@
   ],
   "edges": [
     {
-      "id": "ccf804ef34d46c41",
-      "fromNode": "4cf2f312a93ac877",
+      "id": "4cc6f477237fa4aa",
+      "fromNode": "232d04b9bdd2d248",
       "fromSide": "right",
-      "toNode": "2fdd870a356aece2",
+      "toNode": "3af8469143948b2f",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "2e5de6af0decaf50",
-      "fromNode": "2fdd870a356aece2",
+      "id": "b8d5624d647d16ef",
+      "fromNode": "3af8469143948b2f",
       "fromSide": "right",
-      "toNode": "cd52f27b8d570952",
+      "toNode": "d5078411f0a17107",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "9f0ccf1a39250a5b",
-      "fromNode": "cd52f27b8d570952",
+      "id": "c14f88228adac885",
+      "fromNode": "d5078411f0a17107",
       "fromSide": "right",
-      "toNode": "e59e8553fa8acc31",
+      "toNode": "9763755bf65bb3d7",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "6bd21aed50af1b71",
-      "fromNode": "e59e8553fa8acc31",
+      "id": "4d331a42eb25ba0b",
+      "fromNode": "9763755bf65bb3d7",
       "fromSide": "right",
-      "toNode": "ad66dc21a3addc58",
+      "toNode": "29d3ebda9239f843",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "cd17e29a3470b0f6",
-      "fromNode": "ad66dc21a3addc58",
+      "id": "5c183eafa33a13c4",
+      "fromNode": "29d3ebda9239f843",
       "fromSide": "bottom",
-      "toNode": "b6d1ac03981f9776",
+      "toNode": "c60d0e40a211b49b",
       "toSide": "top",
       "toEnd": "arrow"
     },
     {
-      "id": "18461e8f7ebb762f",
-      "fromNode": "b6d1ac03981f9776",
+      "id": "ef998aad3b6f7ca0",
+      "fromNode": "c60d0e40a211b49b",
       "fromSide": "right",
-      "toNode": "c10773673ba327ea",
+      "toNode": "9660c36b17ebd871",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "e0f36f976b28b75f",
-      "fromNode": "c10773673ba327ea",
+      "id": "a1b225f7ef3c1459",
+      "fromNode": "9660c36b17ebd871",
       "fromSide": "right",
-      "toNode": "69e3b824e7000b02",
+      "toNode": "a7df9f385eaab44a",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "4ad6bdc2378a67c9",
-      "fromNode": "69e3b824e7000b02",
+      "id": "31c5cb7244ec48f1",
+      "fromNode": "a7df9f385eaab44a",
       "fromSide": "right",
-      "toNode": "ac4b9d44874d2af5",
+      "toNode": "150fc8c4fa3efa97",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "3c3b7d75dbcbad22",
-      "fromNode": "ac4b9d44874d2af5",
+      "id": "c2508b4c5f6bd0bb",
+      "fromNode": "150fc8c4fa3efa97",
       "fromSide": "right",
-      "toNode": "c11fd2a0a7813629",
+      "toNode": "3a1986c9b363fef8",
       "toSide": "left",
       "toEnd": "arrow"
     }

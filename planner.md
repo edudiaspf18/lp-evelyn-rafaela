@@ -90,7 +90,7 @@ Padrão repetido: Hero → faixa de diferenciais → serviços em cards → sobr
 | `--muted-foreground` | `#6B7566` | texto secundário (conferir contraste ≥ 4.5:1) |
 | `--border` | `#2C4027` a 12% | bordas 1px |
 
-- Títulos: **Cormorant Garamond** (500/600). Corpo: **Lato** (400/700). Via `next/font/google` (self-host em build, sem request externo).
+- Títulos: **Fraunces** (serifa "soft" com eixo óptico, peso 300–400, itálico para ênfase). Corpo e rótulos: **Jost** (sans geométrica fina, parente do wordmark da logo, rótulos em caixa alta com tracking largo). Via `next/font/google` (self-host em build). Trocado de Cormorant+Lato (combinação comum em sites de nutri). Eixo SOFT do Fraunces removido (−90 KB, LCP mobile).
 - Escala: h1 `text-4xl md:text-6xl lg:text-7xl tracking-tight`; h2 `text-3xl md:text-5xl tracking-tight`; corpo `text-base md:text-lg leading-relaxed`.
 - Raio: `rounded-md`/`rounded-lg` (evitar `rounded-2xl` do doc original). Botão CTA `rounded-full` permitido (logo é delicada).
 - Ajustar tokens finais ao Tailwind em uso (v4: `@theme` no `globals.css`; v3: `tailwind.config.ts`). Verificar versão no scaffold.
@@ -257,6 +257,8 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` feito · `[!]` bloqueado
 - [x] T4.4 Variantes de botão da marca (primary, outline)
 
 ### F5 — Seções
+- [x] T5.11 Redesign editorial: manifesto tipográfico, serviços em linhas de índice, seção "Como é a consulta" (passos), Sobre com texto dela, faixa marquee, ilustrações botânicas em traço, fotos novas tratadas (001/002/jaleco), ícone da marca (monograma em quadrado verde)
+- [x] T5.12 Animações CSS (sem JS): entrada no hero, máscara na foto, revelação ao rolar (scroll-driven, com fallback), marquee, traço desenhado; `prefers-reduced-motion` respeitado
 - [x] T5.1 `Header` (logo + âncoras + CTA; menu mobile)
 - [x] T5.2 `Hero`
 - [x] T5.3 `Diferenciais`
@@ -324,6 +326,7 @@ Regra: pendência não bloqueia fase inteira. Seguir com placeholder `TODO(evely
 
 Formato: `AAAA-MM-DD — tarefa(s) — resumo curto`. Mais recente no topo.
 
+- 2026-10-01 — T5.11, T5.12 — redesign (Fraunces + Jost, fotos novas, animações, nova seção Como é a consulta, ícone da marca). Lighthouse mobile 92/100/100/100, desktop 99+/100/100/100.
 - 2026-10-01 — T8.2, T8.4, T8.10 — Lighthouse mobile 92/100/100/100 e desktop 100/100/100/100. Teclado: 32 paradas de Tab, todas com foco visível, banner e menu operáveis por teclado. Correções de heurísticas (cookies, 404, toque, contraste).
 - 2026-10-01 — F1–F7, T8.1/T8.3/T8.5/T8.6 — página completa (Header, Hero, Diferenciais, Serviços, Sobre, Depoimentos DEMO, FAQ, CTA, Footer), LGPD, tracking, SEO. Build limpo. UTM validado. Fotos tratadas.
 - 2026-10-01 — §0 — regras de commit em português + tarefa README (T8.9) adicionadas.

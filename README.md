@@ -8,7 +8,7 @@ Landing page de conversão da nutricionista **Evelyn Rafaela** (Anápolis-GO). O
 
 - [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
 - Tailwind CSS v4 + shadcn/ui (base-nova) + lucide-react
-- Fontes `next/font`: Cormorant Garamond (títulos) e Lato (texto)
+- Fontes `next/font`: Fraunces (títulos) e Jost (texto e rótulos)
 - Deploy self-hosted: VPS Ubuntu + PM2 + Nginx + Certbot + GitHub Actions
 
 ## Rodando localmente
@@ -45,8 +45,8 @@ Outros scripts:
 src/
 ├── app/                 layout, página, privacidade, sitemap, robots, ícones
 ├── components/
-│   ├── sections/        Header, Hero, Differentials, Services, About, Testimonials, FAQ, FinalCta, Footer
-│   ├── ui/              shadcn (button, accordion, sheet) + ServiceCard
+│   ├── sections/        Header, Hero, Marquee, Statement, Services, Process, About, Testimonials, FAQ, FinalCta, Footer
+│   ├── ui/              shadcn (button, accordion, sheet) + ServiceRow + Botanical (SVG)
 │   ├── WhatsAppButton   link wa.me com mensagem dinâmica, UTM e tracking
 │   ├── FloatingWhatsApp botão fixo
 │   ├── CookieConsent    banner LGPD
@@ -61,6 +61,7 @@ src/
 - **WhatsApp com mensagem pronta:** cada botão monta `https://wa.me/<número>?text=...`. Os cards de serviço levam o nome do serviço na mensagem.
 - **UTM:** `?utm_source=instagram&utm_medium=stories&utm_campaign=agenda_aberta` é lido no cliente. A origem entra na mensagem ("Vim pelo seu Instagram!") e nos eventos de lead.
 - **LGPD:** GA4 e Meta Pixel só carregam depois do "Aceitar" no banner. A escolha fica no `localStorage`. Sem consentimento, o evento de clique não dispara.
+- **Animações:** só CSS (`@utility` no `globals.css`): entrada no hero, revelação ao rolar com `animation-timeline: view()` (sem suporte = sem animação, conteúdo visível), marquee e traço desenhado. `prefers-reduced-motion` desliga tudo.
 - **SEO:** metadata + Open Graph, JSON-LD (`MedicalBusiness`), `sitemap.xml`, `robots.txt`, HTML semântico com um único `h1`.
 
 ## Conteúdo pendente antes de publicar
