@@ -291,17 +291,17 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` feito · `[!]` bloqueado
 - [x] T8.4 Teclado: tab order, `focus-visible` visível em tudo
 - [x] T8.5 Link WhatsApp abre com mensagem certa em cada CTA e em cada card
 - [x] T8.6 Teste UTM: `/?utm_source=instagram&utm_medium=stories&utm_campaign=agenda_aberta`
-- [ ] T8.7 Revisão Tech Lead (re-render, memory leak, promise sem catch)
-- [ ] T8.9 `README.md` em português (ver §0 README). Commit: `docs: adiciona README do projeto`
+- [x] T8.7 Revisão Tech Lead (re-render, memory leak, promise sem catch). Achados corrigidos: revogação de consentimento não parava GA/Pixel já carregados (agora `consent update`/`revoke`); faltavam headers de segurança (`next.config.ts`); import circular evitado. Aceitos: ano do footer fixo no build (rebuild anual); sem CSP (Next injeta scripts inline)
+- [x] T8.9 `README.md` em português (ver §0 README). Commit: `docs: adiciona README do projeto`
 
 ### F9 — Deploy
-- [ ] T9.0 **Go-live blocker:** substituir depoimentos DEMO por reais ou esvaziar `TESTIMONIALS` (seção some sozinha)
-- [ ] T9.1 VPS Ubuntu, Node LTS, PM2 (`pm2 start npm --name "landing-evelyn" -- start`)
-- [ ] T9.2 Nginx proxy reverso 80/443 → 3000
-- [ ] T9.3 Certbot (Let's Encrypt) + renovação
-- [ ] T9.4 GitHub Actions: SSH → `git pull` → `npm ci && npm run build` → `pm2 reload landing-evelyn`
-- [ ] T9.5 Secrets no GitHub (host, user, key). `.env` de produção no servidor
-- [ ] T9.6 DNS do domínio + smoke test em produção
+- [!] T9.0 **Go-live blocker (depende da Evelyn, Q3):** substituir depoimentos DEMO por reais ou esvaziar `TESTIMONIALS` (seção some sozinha)
+- [!] T9.1 VPS Ubuntu, Node LTS, PM2 (`pm2 start npm --name "landing-evelyn" -- start`). Script pronto: `deploy/server-setup.sh`. Falta o VPS (Q8)
+- [!] T9.2 Nginx proxy reverso 80/443 → 3000. Config pronta: `deploy/nginx.conf`. Falta o VPS (Q8)
+- [!] T9.3 Certbot (Let's Encrypt) + renovação. Comando em `DEPLOY.md`. Falta VPS + DNS (Q6, Q8)
+- [x] T9.4 GitHub Actions: CI (lint, tsc, build) + deploy SSH → `git pull` → `npm ci && npm run build` → `pm2 reload landing-evelyn`. Workflow em `.github/workflows/deploy.yml`; deploy fica desligado até `DEPLOY_ENABLED=true`
+- [!] T9.5 Secrets no GitHub (host, user, key). `.env` de produção no servidor
+- [!] T9.6 DNS do domínio + smoke test em produção
 
 ---
 
@@ -326,6 +326,7 @@ Regra: pendência não bloqueia fase inteira. Seguir com placeholder `TODO(evely
 
 Formato: `AAAA-MM-DD — tarefa(s) — resumo curto`. Mais recente no topo.
 
+- 2026-10-01 — T8.7, T8.9, T9.4 — revisão Tech Lead (3 correções), headers de segurança, pacote de deploy (`deploy/`, `DEPLOY.md`, workflow). T9.0–T9.3, T9.5, T9.6 bloqueadas por VPS/domínio/depoimentos reais.
 - 2026-10-01 — T5.11, T5.12 — redesign (Fraunces + Jost, fotos novas, animações, nova seção Como é a consulta, ícone da marca). Lighthouse mobile 92/100/100/100, desktop 99+/100/100/100.
 - 2026-10-01 — T8.2, T8.4, T8.10 — Lighthouse mobile 92/100/100/100 e desktop 100/100/100/100. Teclado: 32 paradas de Tab, todas com foco visível, banner e menu operáveis por teclado. Correções de heurísticas (cookies, 404, toque, contraste).
 - 2026-10-01 — F1–F7, T8.1/T8.3/T8.5/T8.6 — página completa (Header, Hero, Diferenciais, Serviços, Sobre, Depoimentos DEMO, FAQ, CTA, Footer), LGPD, tracking, SEO. Build limpo. UTM validado. Fotos tratadas.

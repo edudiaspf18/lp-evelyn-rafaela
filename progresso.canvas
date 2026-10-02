@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "232d04b9bdd2d248",
+      "id": "f260c1b8d6db8d4b",
       "type": "text",
       "x": 0,
       "y": 330,
@@ -11,7 +11,7 @@
       "color": "4"
     },
     {
-      "id": "3af8469143948b2f",
+      "id": "596628b94e9f3237",
       "type": "text",
       "x": 380,
       "y": 330,
@@ -21,7 +21,7 @@
       "color": "4"
     },
     {
-      "id": "d5078411f0a17107",
+      "id": "8e0abfa620d98d12",
       "type": "text",
       "x": 760,
       "y": 330,
@@ -31,7 +31,7 @@
       "color": "4"
     },
     {
-      "id": "9763755bf65bb3d7",
+      "id": "282af9c1e8c85908",
       "type": "text",
       "x": 1140,
       "y": 330,
@@ -41,7 +41,7 @@
       "color": "4"
     },
     {
-      "id": "29d3ebda9239f843",
+      "id": "49a62849dc7c3d55",
       "type": "text",
       "x": 1520,
       "y": 330,
@@ -51,7 +51,7 @@
       "color": "4"
     },
     {
-      "id": "c60d0e40a211b49b",
+      "id": "2c95869a0e1e713a",
       "type": "text",
       "x": 0,
       "y": 770,
@@ -61,7 +61,7 @@
       "color": "4"
     },
     {
-      "id": "9660c36b17ebd871",
+      "id": "79e2014a41f2f03a",
       "type": "text",
       "x": 380,
       "y": 770,
@@ -71,7 +71,7 @@
       "color": "4"
     },
     {
-      "id": "a7df9f385eaab44a",
+      "id": "6d1596cfd8cdc3bc",
       "type": "text",
       "x": 760,
       "y": 770,
@@ -81,46 +81,47 @@
       "color": "4"
     },
     {
-      "id": "150fc8c4fa3efa97",
+      "id": "c76930424e1caedf",
       "type": "text",
       "x": 1140,
       "y": 770,
       "width": 320,
       "height": 360,
-      "text": "## F8 · QA\n**EM ANDAMENTO** (7/9)\n\n- [x] T8.10 Rodada Nielsen: botão \"Gerenciar cookies\" no…\n- [x] T8.1 npm run lint, tsc --noEmit, npm run build li…\n- [x] T8.2 Lighthouse mobile: Performance ≥ 90, Acessib…\n- [x] T8.3 Teste manual 375 / 768 / 1280. Sem scroll ho…\n- [x] T8.4 Teclado: tab order, focus-visible visível em…\n- [x] T8.5 Link WhatsApp abre com mensagem certa em cad…\n- [x] T8.6 Teste UTM: /?utm_source=instagram&utm_medium…\n- [ ] T8.7 Revisão Tech Lead (re-render, memory leak, p…\n- [ ] T8.9 README.md em português (ver §0 README). Comm…",
-      "color": "3"
+      "text": "## F8 · QA\n**CONCLUÍDA** (9/9)\n\n- [x] T8.10 Rodada Nielsen: botão \"Gerenciar cookies\" no…\n- [x] T8.1 npm run lint, tsc --noEmit, npm run build li…\n- [x] T8.2 Lighthouse mobile: Performance ≥ 90, Acessib…\n- [x] T8.3 Teste manual 375 / 768 / 1280. Sem scroll ho…\n- [x] T8.4 Teclado: tab order, focus-visible visível em…\n- [x] T8.5 Link WhatsApp abre com mensagem certa em cad…\n- [x] T8.6 Teste UTM: /?utm_source=instagram&utm_medium…\n- [x] T8.7 Revisão Tech Lead (re-render, memory leak, p…\n- [x] T8.9 README.md em português (ver §0 README). Comm…",
+      "color": "4"
     },
     {
-      "id": "3a1986c9b363fef8",
+      "id": "cfda126816fb0705",
       "type": "text",
       "x": 1520,
       "y": 770,
       "width": 320,
       "height": 360,
-      "text": "## F9 · Deploy\n**A FAZER** (0/7)\n\n- [ ] T9.0 Go-live blocker: substituir depoimentos DEMO…\n- [ ] T9.1 VPS Ubuntu, Node LTS, PM2 (pm2 start npm --n…\n- [ ] T9.2 Nginx proxy reverso 80/443 → 3000\n- [ ] T9.3 Certbot (Let's Encrypt) + renovação\n- [ ] T9.4 GitHub Actions: SSH → git pull → npm ci && n…\n- [ ] T9.5 Secrets no GitHub (host, user, key). .env de…\n- [ ] T9.6 DNS do domínio + smoke test em produção"
+      "text": "## F9 · Deploy\n**BLOQUEADA** (1/7)\n\n- [!] T9.0 Go-live blocker (depende da Evelyn, Q3): sub…\n- [!] T9.1 VPS Ubuntu, Node LTS, PM2 (pm2 start npm --n…\n- [!] T9.2 Nginx proxy reverso 80/443 → 3000. Config pr…\n- [!] T9.3 Certbot (Let's Encrypt) + renovação. Comando…\n- [x] T9.4 GitHub Actions: CI (lint, tsc, build) + depl…\n- [!] T9.5 Secrets no GitHub (host, user, key). .env de…\n- [!] T9.6 DNS do domínio + smoke test em produção",
+      "color": "1"
     },
     {
-      "id": "8c537c03a48f25d6",
+      "id": "fa3d86d87bf9a83f",
       "type": "text",
       "x": 0,
       "y": 0,
       "width": 700,
       "height": 280,
       "color": "4",
-      "text": "# LP Evelyn Rafaela · Progresso\n**52/61 tarefas (85%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
+      "text": "# LP Evelyn Rafaela · Progresso\n**55/61 tarefas (90%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
     },
     {
-      "id": "9f43b63c808bfc47",
+      "id": "65d0624d9812487a",
       "type": "text",
       "x": 760,
       "y": 0,
       "width": 420,
       "height": 280,
       "color": "3",
-      "text": "## AGORA\n**Tarefa:** T8.7 Revisão Tech Lead (re-render, memory leak, p…\n**Próxima:** T8.9 README.md em português (ver §0 README). Comm…\n\n_Atualizado: 2026-10-01_"
+      "text": "## AGORA\n**Tarefa:** —\n**Próxima:** —\n\n_Atualizado: 2026-10-01_"
     },
     {
-      "id": "d9c78f8913f7c05c",
+      "id": "bfeadc84d48bc3f0",
       "type": "text",
       "x": 1240,
       "y": 0,
@@ -132,74 +133,74 @@
   ],
   "edges": [
     {
-      "id": "4cc6f477237fa4aa",
-      "fromNode": "232d04b9bdd2d248",
+      "id": "c238df3311b93ef3",
+      "fromNode": "f260c1b8d6db8d4b",
       "fromSide": "right",
-      "toNode": "3af8469143948b2f",
+      "toNode": "596628b94e9f3237",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "b8d5624d647d16ef",
-      "fromNode": "3af8469143948b2f",
+      "id": "6ea86cca4714ce15",
+      "fromNode": "596628b94e9f3237",
       "fromSide": "right",
-      "toNode": "d5078411f0a17107",
+      "toNode": "8e0abfa620d98d12",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "c14f88228adac885",
-      "fromNode": "d5078411f0a17107",
+      "id": "f5171ed20a78ca85",
+      "fromNode": "8e0abfa620d98d12",
       "fromSide": "right",
-      "toNode": "9763755bf65bb3d7",
+      "toNode": "282af9c1e8c85908",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "4d331a42eb25ba0b",
-      "fromNode": "9763755bf65bb3d7",
+      "id": "309ff7fb8a6c4732",
+      "fromNode": "282af9c1e8c85908",
       "fromSide": "right",
-      "toNode": "29d3ebda9239f843",
+      "toNode": "49a62849dc7c3d55",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "5c183eafa33a13c4",
-      "fromNode": "29d3ebda9239f843",
+      "id": "a781d78f0fb882f6",
+      "fromNode": "49a62849dc7c3d55",
       "fromSide": "bottom",
-      "toNode": "c60d0e40a211b49b",
+      "toNode": "2c95869a0e1e713a",
       "toSide": "top",
       "toEnd": "arrow"
     },
     {
-      "id": "ef998aad3b6f7ca0",
-      "fromNode": "c60d0e40a211b49b",
+      "id": "1397d750fbe1402d",
+      "fromNode": "2c95869a0e1e713a",
       "fromSide": "right",
-      "toNode": "9660c36b17ebd871",
+      "toNode": "79e2014a41f2f03a",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "a1b225f7ef3c1459",
-      "fromNode": "9660c36b17ebd871",
+      "id": "977ab881065b13d0",
+      "fromNode": "79e2014a41f2f03a",
       "fromSide": "right",
-      "toNode": "a7df9f385eaab44a",
+      "toNode": "6d1596cfd8cdc3bc",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "31c5cb7244ec48f1",
-      "fromNode": "a7df9f385eaab44a",
+      "id": "35a1832c19b137c8",
+      "fromNode": "6d1596cfd8cdc3bc",
       "fromSide": "right",
-      "toNode": "150fc8c4fa3efa97",
+      "toNode": "c76930424e1caedf",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "c2508b4c5f6bd0bb",
-      "fromNode": "150fc8c4fa3efa97",
+      "id": "f0e9cce655a5c700",
+      "fromNode": "c76930424e1caedf",
       "fromSide": "right",
-      "toNode": "3a1986c9b363fef8",
+      "toNode": "cfda126816fb0705",
       "toSide": "left",
       "toEnd": "arrow"
     }
