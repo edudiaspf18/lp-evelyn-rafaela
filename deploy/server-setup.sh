@@ -12,6 +12,14 @@ sudo npm install -g pm2
 
 sudo ufw allow OpenSSH && sudo ufw allow 'Nginx Full' && sudo ufw --force enable
 
+# Deploy key (somente leitura) para clonar o repositório privado.
+# Antes: scp ~/.ssh/lp_evelyn_pull usuario@IP:~/.ssh/lp_evelyn_pull
+if [ -f "$HOME/.ssh/lp_evelyn_pull" ]; then
+  chmod 600 "$HOME/.ssh/lp_evelyn_pull"
+  grep -q lp_evelyn_pull "$HOME/.ssh/config" 2>/dev/null || printf 'Host github.com\n  IdentityFile ~/.ssh/lp_evelyn_pull\n  IdentitiesOnly yes\n' >> "$HOME/.ssh/config"
+  ssh-keyscan -t ed25519 github.com >> "$HOME/.ssh/known_hosts" 2>/dev/null
+fi
+
 sudo mkdir -p "$APP_DIR" && sudo chown "$USER":"$USER" "$APP_DIR"
 git clone "$REPO_URL" "$APP_DIR"
 cd "$APP_DIR"

@@ -300,7 +300,7 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` feito · `[!]` bloqueado
 - [!] T9.2 Nginx proxy reverso 80/443 → 3000. Config pronta: `deploy/nginx.conf`. Falta o VPS (Q8)
 - [!] T9.3 Certbot (Let's Encrypt) + renovação. Comando em `DEPLOY.md`. Falta VPS + DNS (Q6, Q8)
 - [x] T9.4 GitHub Actions: CI (lint, tsc, build) + deploy SSH → `git pull` → `npm ci && npm run build` → `pm2 reload landing-evelyn`. Workflow em `.github/workflows/deploy.yml`; deploy fica desligado até `DEPLOY_ENABLED=true`
-- [!] T9.5 Secrets no GitHub (host, user, key). `.env` de produção no servidor
+- [~] T9.5 Secrets no GitHub (host, user, key). `.env` de produção no servidor. FEITO: `SSH_KEY`, `SSH_PORT` e deploy key somente leitura no GitHub (chaves em `~/.ssh/lp_evelyn_*`). FALTA: `SSH_HOST`, `SSH_USER` (dependem do VPS) e criar `.env` no servidor (o `server-setup.sh` cria a partir do `.env.example`)
 - [!] T9.6 DNS do domínio + smoke test em produção
 
 ---
@@ -326,6 +326,7 @@ Regra: pendência não bloqueia fase inteira. Seguir com placeholder `TODO(evely
 
 Formato: `AAAA-MM-DD — tarefa(s) — resumo curto`. Mais recente no topo.
 
+- 2026-10-02 — T9.5 parcial — par de chaves SSH gerado; `SSH_KEY` e `SSH_PORT` cadastrados; deploy key somente leitura adicionada ao repositório.
 - 2026-10-01 — T8.7, T8.9, T9.4 — revisão Tech Lead (3 correções), headers de segurança, pacote de deploy (`deploy/`, `DEPLOY.md`, workflow). T9.0–T9.3, T9.5, T9.6 bloqueadas por VPS/domínio/depoimentos reais.
 - 2026-10-01 — T5.11, T5.12 — redesign (Fraunces + Jost, fotos novas, animações, nova seção Como é a consulta, ícone da marca). Lighthouse mobile 92/100/100/100, desktop 99+/100/100/100.
 - 2026-10-01 — T8.2, T8.4, T8.10 — Lighthouse mobile 92/100/100/100 e desktop 100/100/100/100. Teclado: 32 paradas de Tab, todas com foco visível, banner e menu operáveis por teclado. Correções de heurísticas (cookies, 404, toque, contraste).
