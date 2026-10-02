@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LP Evelyn Rafaela · Nutricionista
 
-## Getting Started
+Landing page de conversão da nutricionista **Evelyn Rafaela** (Anápolis-GO). O objetivo é gerar autoridade e levar o visitante a agendar a consulta pelo WhatsApp.
 
-First, run the development server:
+> Slogan (H1): **"A Nutrição é mais que estética, é poder viver de novo!"**
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
+- Tailwind CSS v4 + shadcn/ui (base-nova) + lucide-react
+- Fontes `next/font`: Cormorant Garamond (títulos) e Lato (texto)
+- Deploy self-hosted: VPS Ubuntu + PM2 + Nginx + Certbot + GitHub Actions
+
+## Rodando localmente
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env   # ajuste as variáveis se necessário
+npm run dev            # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Outros scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Comando | O que faz |
+|---|---|
+| `npm run build` | build de produção |
+| `npm run start` | serve o build |
+| `npm run lint` | ESLint |
+| `npx tsc --noEmit` | checagem de tipos |
+| `python3 scripts/atualizar-canvas.py` | regenera `progresso.canvas` a partir do `planner.md` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Variáveis de ambiente
 
-## Learn More
+| Variável | Descrição |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | URL pública (canonical, OG, sitemap) |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp com DDI, só dígitos (ex.: `5562993818529`) |
+| `NEXT_PUBLIC_INSTAGRAM_URL` | Link do Instagram |
+| `NEXT_PUBLIC_GA_ID` | ID do GA4. Vazio = desligado |
+| `NEXT_PUBLIC_META_PIXEL_ID` | ID do Meta Pixel. Vazio = desligado |
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                 layout, página, privacidade, sitemap, robots, ícones
+├── components/
+│   ├── sections/        Header, Hero, Differentials, Services, About, Testimonials, FAQ, FinalCta, Footer
+│   ├── ui/              shadcn (button, accordion, sheet) + ServiceCard
+│   ├── WhatsAppButton   link wa.me com mensagem dinâmica, UTM e tracking
+│   ├── FloatingWhatsApp botão fixo
+│   ├── CookieConsent    banner LGPD
+│   └── TrackingScripts  GA4 + Meta Pixel (só após aceite)
+├── data/content.ts      textos, serviços, FAQ, clínica
+├── lib/                 env, utils (WhatsApp), consent, tracking
+└── types/global.d.ts    tipos de window.gtag / window.fbq
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Como funciona
 
-## Deploy on Vercel
+- **WhatsApp com mensagem pronta:** cada botão monta `https://wa.me/<número>?text=...`. Os cards de serviço levam o nome do serviço na mensagem.
+- **UTM:** `?utm_source=instagram&utm_medium=stories&utm_campaign=agenda_aberta` é lido no cliente. A origem entra na mensagem ("Vim pelo seu Instagram!") e nos eventos de lead.
+- **LGPD:** GA4 e Meta Pixel só carregam depois do "Aceitar" no banner. A escolha fica no `localStorage`. Sem consentimento, o evento de clique não dispara.
+- **SEO:** metadata + Open Graph, JSON-LD (`MedicalBusiness`), `sitemap.xml`, `robots.txt`, HTML semântico com um único `h1`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conteúdo pendente antes de publicar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Depoimentos:** hoje são **exemplos fictícios** (`TESTIMONIALS_ARE_DEMO = true` em `src/data/content.ts`), com aviso visível na página. Trocar por depoimentos reais autorizados, ou esvaziar `TESTIMONIALS` (a seção some sozinha).
+- Confirmar horário próprio de atendimento da Evelyn e se atende online.
+- Informar IDs do GA4 e do Meta Pixel.
+
+## Deploy (VPS)
+
+1. Ubuntu com Node LTS, PM2, Nginx e Certbot.
+2. `pm2 start npm --name "landing-evelyn" -- start`
+3. Nginx como proxy reverso 80/443 → `localhost:3000`, certificado via Certbot.
+4. GitHub Actions: a cada push em `main`, SSH no servidor → `git pull` → `npm ci && npm run build` → `pm2 reload landing-evelyn`.
+
+## Documentação do projeto
+
+- [`planner.md`](planner.md): regras, decisões técnicas, tarefas por fase e pendências.
+- [`progresso.canvas`](progresso.canvas): painel visual de progresso (abrir no Obsidian).
+
+Fotos e prints originais ficam fora do repositório (`assets/` e `design de referencia/`).
