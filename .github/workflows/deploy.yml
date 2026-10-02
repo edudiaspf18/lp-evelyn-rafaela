@@ -16,7 +16,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
-      - run: npx tsc --noEmit
+      # LayoutProps/PageProps são gerados pelo Next; sem typegen o tsc falha em checkout limpo
+      - run: npx next typegen && npx tsc --noEmit
       - run: npm run build
 
   deploy:

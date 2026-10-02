@@ -26,7 +26,7 @@ Outros scripts:
 | `npm run build` | build de produção |
 | `npm run start` | serve o build |
 | `npm run lint` | ESLint |
-| `npx tsc --noEmit` | checagem de tipos |
+| `npx next typegen && npx tsc --noEmit` | checagem de tipos (typegen gera `LayoutProps`) |
 | `python3 scripts/atualizar-canvas.py` | regenera `progresso.canvas` a partir do `planner.md` |
 
 ## Variáveis de ambiente
