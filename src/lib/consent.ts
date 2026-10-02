@@ -6,6 +6,17 @@ export type Consent = "loading" | "unknown" | "granted" | "denied";
 const STORAGE_KEY = "lp-evelyn:cookie-consent";
 const listeners = new Set<() => void>();
 
+/** Revoga o consentimento nos scripts já carregados na página (GA4 e Meta Pixel). */
+function revokeTracking(): void {
+  window.gtag?.("consent", "update", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
+  window.fbq?.("consent", "revoke");
+}
+
 function subscribe(callback: () => void): () => void {
   listeners.add(callback);
   window.addEventListener("storage", callback);
@@ -29,6 +40,7 @@ function getServerSnapshot(): Consent {
 }
 
 export function setConsent(value: "granted" | "denied"): void {
+  if (value === "denied") revokeTracking();
   try {
     window.localStorage.setItem(STORAGE_KEY, value);
   } catch {
@@ -39,6 +51,7 @@ export function setConsent(value: "granted" | "denied"): void {
 
 /** Apaga a escolha e reabre o banner (heurística: controle do usuário). */
 export function resetConsent(): void {
+  revokeTracking();
   try {
     window.localStorage.removeItem(STORAGE_KEY);
   } catch {
