@@ -1,0 +1,207 @@
+{
+  "nodes": [
+    {
+      "id": "bb15d263d319785b",
+      "type": "text",
+      "x": 0,
+      "y": 330,
+      "width": 320,
+      "height": 360,
+      "text": "## F0 · Planejamento\n**CONCLUÍDA** (3/3)\n\n- [x] T0.1 Ler doc, assets, referências\n- [x] T0.2 Escrever planner.md\n- [x] T0.3 Criar progresso.canvas",
+      "color": "4"
+    },
+    {
+      "id": "f2aabd6bc7771d8d",
+      "type": "text",
+      "x": 380,
+      "y": 330,
+      "width": 320,
+      "height": 360,
+      "text": "## F1 · Setup\n**CONCLUÍDA** (8/8)\n\n- [x] T1.1 git init + .gitignore (inclui .env, exceto .…\n- [x] T1.2 Scaffold Next.js: TS, Tailwind, App Router, …\n- [x] T1.3 tsconfig strict (já vem no scaffold; noUnche…\n- [x] T1.4 shadcn init + adicionar button, accordion, c…\n- [x] T1.5 Tokens de cor em globals.css (§3)\n- [x] T1.6 Fontes Cormorant Garamond + Lato via next/font\n- [x] T1.7 .env.example + lib/env.ts\n- [x] T1.8 types/global.d.ts",
+      "color": "4"
+    },
+    {
+      "id": "854380fe62b003d1",
+      "type": "text",
+      "x": 760,
+      "y": 330,
+      "width": 320,
+      "height": 360,
+      "text": "## F2 · Assets\n**CONCLUÍDA** (5/5)\n\n- [x] T2.1 Copiar logo → public/images/logo.png; gerar …\n- [x] T2.2 Recortar foto jaleco (15.30.39) → public/ima…\n- [x] T2.3 Foto Sobre: conseguir original sem overlay (…\n- [x] T2.4 og-image-evelyn.jpg 1200×630 (logo centraliz…\n- [x] T2.5 Alt text descritivo em todas as imagens. nex…",
+      "color": "4"
+    },
+    {
+      "id": "159d7863feea8bbd",
+      "type": "text",
+      "x": 1140,
+      "y": 330,
+      "width": 320,
+      "height": 360,
+      "text": "## F3 · Dados e lib\n**CONCLUÍDA** (4/4)\n\n- [x] T3.1 data/content.ts (§6) com tipos estritos\n- [x] T3.2 lib/utils.ts: cn, generateWhatsAppLink, buil…\n- [x] T3.3 lib/consent.ts (store + useSyncExternalStore)\n- [x] T3.4 lib/tracking.ts tipado, no-op sem consent",
+      "color": "4"
+    },
+    {
+      "id": "cd3732ff29bfa0cd",
+      "type": "text",
+      "x": 1520,
+      "y": 330,
+      "width": 320,
+      "height": 360,
+      "text": "## F4 · UI base\n**CONCLUÍDA** (4/4)\n\n- [x] T4.1 WhatsAppButton (client, Suspense-safe, UTM, …\n- [x] T4.2 ServiceCard (RSC)\n- [x] T4.3 FAQ com Accordion shadcn\n- [x] T4.4 Variantes de botão da marca (primary, outline)",
+      "color": "4"
+    },
+    {
+      "id": "bdcc94a2d7e6dc92",
+      "type": "text",
+      "x": 0,
+      "y": 770,
+      "width": 320,
+      "height": 360,
+      "text": "## F5 · Seções\n**CONCLUÍDA** (10/10)\n\n- [x] T5.1 Header (logo + âncoras + CTA; menu mobile)\n- [x] T5.2 Hero\n- [x] T5.3 Diferenciais\n- [x] T5.4 Services\n- [x] T5.5 About\n- [x] T5.6 Testimonials (condicional)\n- [x] T5.7 FAQ\n- [x] T5.8 FinalCta\n- [x] T5.9 Footer (Instagram + mapa)\n- [x] T5.10 Montar page.tsx",
+      "color": "4"
+    },
+    {
+      "id": "07cffb1c16d2322f",
+      "type": "text",
+      "x": 380,
+      "y": 770,
+      "width": 320,
+      "height": 360,
+      "text": "## F6 · Tracking e LGPD\n**CONCLUÍDA** (5/5)\n\n- [x] T6.1 CookieConsent (banner na 1ª visita, Aceitar/…\n- [x] T6.2 TrackingScripts (GA4 + Pixel via next/script…\n- [x] T6.3 FloatingWhatsApp (botão fixo, não cobre bann…\n- [x] T6.4 Página/seção de política de privacidade (tex…\n- [x] T6.5 Testar fluxo: sem consent = zero request GA/…",
+      "color": "4"
+    },
+    {
+      "id": "b6135fc26d637543",
+      "type": "text",
+      "x": 760,
+      "y": 770,
+      "width": 320,
+      "height": 360,
+      "text": "## F7 · SEO\n**CONCLUÍDA** (4/4)\n\n- [x] T7.1 metadata em layout.tsx (title, description, …\n- [x] T7.2 JSON-LD Nutritionist/LocalBusiness (nome, te…\n- [x] T7.3 sitemap.ts, robots.ts\n- [x] T7.4 HTML semântico: um h1, header/main/section/f…",
+      "color": "4"
+    },
+    {
+      "id": "c2359c6ef3b5e284",
+      "type": "text",
+      "x": 1140,
+      "y": 770,
+      "width": 320,
+      "height": 360,
+      "text": "## F8 · QA\n**EM ANDAMENTO** (4/8)\n\n- [x] T8.1 npm run lint, tsc --noEmit, npm run build li…\n- [ ] T8.2 Lighthouse mobile: Performance ≥ 90, Acessib…\n- [x] T8.3 Teste manual 375 / 768 / 1280. Sem scroll ho…\n- [ ] T8.4 Teclado: tab order, focus-visible visível em…\n- [x] T8.5 Link WhatsApp abre com mensagem certa em cad…\n- [x] T8.6 Teste UTM: /?utm_source=instagram&utm_medium…\n- [ ] T8.7 Revisão Tech Lead (re-render, memory leak, p…\n- [ ] T8.9 README.md em português (ver §0 README). Comm…",
+      "color": "3"
+    },
+    {
+      "id": "a9fb326788583a29",
+      "type": "text",
+      "x": 1520,
+      "y": 770,
+      "width": 320,
+      "height": 360,
+      "text": "## F9 · Deploy\n**A FAZER** (0/7)\n\n- [ ] T9.0 Go-live blocker: substituir depoimentos DEMO…\n- [ ] T9.1 VPS Ubuntu, Node LTS, PM2 (pm2 start npm --n…\n- [ ] T9.2 Nginx proxy reverso 80/443 → 3000\n- [ ] T9.3 Certbot (Let's Encrypt) + renovação\n- [ ] T9.4 GitHub Actions: SSH → git pull → npm ci && n…\n- [ ] T9.5 Secrets no GitHub (host, user, key). .env de…\n- [ ] T9.6 DNS do domínio + smoke test em produção"
+    },
+    {
+      "id": "ea31587a2f4b96b6",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 280,
+      "color": "4",
+      "text": "# LP Evelyn Rafaela · Progresso\n**47/58 tarefas (81%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
+    },
+    {
+      "id": "c560d105600643d4",
+      "type": "text",
+      "x": 760,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "3",
+      "text": "## AGORA\n**Tarefa:** T8.2 Lighthouse mobile: Performance ≥ 90, Acessib…\n**Próxima:** T8.4 Teclado: tab order, focus-visible visível em…\n\n_Atualizado: 2026-10-01_"
+    },
+    {
+      "id": "eb4601e799edeff0",
+      "type": "text",
+      "x": 1240,
+      "y": 0,
+      "width": 600,
+      "height": 280,
+      "color": "1",
+      "text": "## Pendências\n- Q2 Foto \"Sobre\" tratada a partir do print. Orig…\n- Q3 Depoimentos reais (autorizados). Hoje: DEMO …\n- Q4 Endereço vem do Google (Av. João Florentino,…\n- Q5 Formação, CRN, método, tempo de atuação\n- Q6 Domínio evelynrafaelanutri.com.br existe? Qu…\n- Q7 Ids GA4 e Meta Pixel\n- Q8 VPS definida? (provedor, acesso SSH)\n- Q9 Dourado #A8895B implementado. Avaliar visual…\n\nVer planner.md §8"
+    }
+  ],
+  "edges": [
+    {
+      "id": "fe50f34911c59d45",
+      "fromNode": "bb15d263d319785b",
+      "fromSide": "right",
+      "toNode": "f2aabd6bc7771d8d",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "73880bc37acf415e",
+      "fromNode": "f2aabd6bc7771d8d",
+      "fromSide": "right",
+      "toNode": "854380fe62b003d1",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b110ba763d36a221",
+      "fromNode": "854380fe62b003d1",
+      "fromSide": "right",
+      "toNode": "159d7863feea8bbd",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "5f8c6d86fd0c96d7",
+      "fromNode": "159d7863feea8bbd",
+      "fromSide": "right",
+      "toNode": "cd3732ff29bfa0cd",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "eb4abe8b63e76878",
+      "fromNode": "cd3732ff29bfa0cd",
+      "fromSide": "bottom",
+      "toNode": "bdcc94a2d7e6dc92",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "548b53d6cdbdaf96",
+      "fromNode": "bdcc94a2d7e6dc92",
+      "fromSide": "right",
+      "toNode": "07cffb1c16d2322f",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "4b98faa4cc8fd091",
+      "fromNode": "07cffb1c16d2322f",
+      "fromSide": "right",
+      "toNode": "b6135fc26d637543",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f8e285512c6890d0",
+      "fromNode": "b6135fc26d637543",
+      "fromSide": "right",
+      "toNode": "c2359c6ef3b5e284",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "5bc08e3480b08f75",
+      "fromNode": "c2359c6ef3b5e284",
+      "fromSide": "right",
+      "toNode": "a9fb326788583a29",
+      "toSide": "left",
+      "toEnd": "arrow"
+    }
+  ]
+}
