@@ -21,7 +21,7 @@ export function Header() {
             className="h-9 w-auto"
             priority
           />
-          <span className="font-heading text-base font-medium tracking-[0.28em] uppercase">
+          <span className="text-[13px] font-normal tracking-[0.34em] uppercase">
             Evelyn Rafaela
           </span>
         </a>

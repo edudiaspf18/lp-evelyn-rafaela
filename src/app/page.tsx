@@ -1,10 +1,12 @@
 import { About } from "@/components/sections/About";
-import { Differentials } from "@/components/sections/Differentials";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
+import { Marquee } from "@/components/sections/Marquee";
+import { Process } from "@/components/sections/Process";
+import { Statement } from "@/components/sections/Statement";
 import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
 
@@ -14,8 +16,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Differentials />
+        <Marquee />
+        <Statement />
         <Services />
+        <Process />
         <About />
         <Testimonials />
         <FAQ />

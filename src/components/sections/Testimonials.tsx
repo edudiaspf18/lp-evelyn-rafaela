@@ -10,10 +10,10 @@ export function Testimonials() {
     <section id="depoimentos" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="max-w-2xl">
-          <p className="mb-4 text-xs font-bold tracking-[0.28em] text-gold-ink uppercase">
+          <p className="mb-4 text-xs font-medium tracking-[0.32em] text-gold-ink uppercase">
             Prova social
           </p>
-          <h2 className="text-4xl leading-[1.05] font-medium text-balance md:text-5xl">
+          <h2 className="text-4xl leading-[1.05] font-light text-balance md:text-5xl">
             Quem cuidou da alimentação com a Evelyn
           </h2>
           {TESTIMONIALS_ARE_DEMO && (

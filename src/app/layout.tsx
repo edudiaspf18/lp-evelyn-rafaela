@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Lato } from "next/font/google";
+import { Fraunces, Jost } from "next/font/google";
 
 import { CookieConsent } from "@/components/CookieConsent";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -8,18 +8,18 @@ import { CLINIC } from "@/data/content";
 import { INSTAGRAM_URL, SITE_URL, WHATSAPP_NUMBER } from "@/lib/env";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+// Fraunces: serifa "soft" com eixo óptico, calorosa e humana. Jost: sans geométrica fina, parente do wordmark da logo.
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  axes: ["opsz"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
-const lato = Lato({
-  variable: "--font-lato",
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
-  weight: ["400", "700"],
   display: "swap",
 });
 
@@ -78,7 +78,7 @@ const JSON_LD = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${lato.variable} h-full`}>
+    <html lang="pt-BR" className={`${fraunces.variable} ${jost.variable} h-full`}>
       <body className="flex min-h-full flex-col">
         {/* Banner antes do conteúdo no DOM: teclado/leitor de tela chegam nele primeiro (visual é fixed) */}
         <CookieConsent />

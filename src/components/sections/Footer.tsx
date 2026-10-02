@@ -36,7 +36,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-start gap-1 text-sm md:col-span-3 md:col-start-7">
-          <h2 className="font-sans text-xs font-bold tracking-[0.28em] text-gold-light uppercase">Contato</h2>
+          <h2 className="font-sans text-xs font-medium tracking-[0.32em] text-gold-light uppercase">Contato</h2>
           <a
             href={generateWhatsAppLink(WHATSAPP_NUMBER, "Olá Evelyn, vim pelo seu site.")}
             target="_blank"
@@ -53,7 +53,7 @@ export function Footer() {
         </div>
 
         <div className="space-y-4 text-sm md:col-span-3">
-          <h2 className="font-sans text-xs font-bold tracking-[0.28em] text-gold-light uppercase">Atendimento</h2>
+          <h2 className="font-sans text-xs font-medium tracking-[0.32em] text-gold-light uppercase">Atendimento</h2>
           <address className="flex gap-2 not-italic">
             <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
             <span>

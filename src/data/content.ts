@@ -1,18 +1,7 @@
-import {
-  CalendarCheck,
-  ClipboardList,
-  Dumbbell,
-  HeartPulse,
-  Salad,
-  Scale,
-  type LucideIcon,
-} from "lucide-react";
-
 export interface Service {
   id: string;
   title: string;
   description: string;
-  icon: LucideIcon;
   /** Mensagem base do WhatsApp (UTM é acrescentado em runtime) */
   message: string;
 }
@@ -40,7 +29,8 @@ export const NAV_LINKS = [
 
 export const HERO = {
   eyebrow: "Nutricionista · Anápolis-GO",
-  title: "A Nutrição é mais que estética, é poder viver de novo!",
+  titleBefore: "A Nutrição é mais que estética, é poder",
+  titleEmphasis: "viver de novo!",
   subtitle:
     "Atendimento nutricional personalizado, feito para a sua rotina. Sem terrorismo, sem dieta da moda: só um plano que cabe na sua vida.",
   primaryCta: "Agendar Minha Consulta",
@@ -68,7 +58,6 @@ export const SERVICES: readonly Service[] = [
     title: "Emagrecimento",
     description:
       "Orientação para perda de peso de forma leve e sustentável, respeitando o contexto da sua vida.",
-    icon: Scale,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Emagrecimento.",
   },
@@ -77,7 +66,6 @@ export const SERVICES: readonly Service[] = [
     title: "Reeducação Alimentar",
     description:
       "Educação alimentar e nutricional: boas escolhas e métodos para melhorar a sua relação com a comida.",
-    icon: Salad,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Reeducação Alimentar.",
   },
@@ -86,7 +74,6 @@ export const SERVICES: readonly Service[] = [
     title: "Hipertrofia",
     description:
       "Ganho de massa muscular com plano alimentar alinhado ao seu treino e aos seus objetivos.",
-    icon: Dumbbell,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Hipertrofia.",
   },
@@ -95,7 +82,6 @@ export const SERVICES: readonly Service[] = [
     title: "Avaliação Nutricional",
     description:
       "Medidas corporais, percentual de gordura e riscos à saúde: entender o seu corpo é o primeiro passo.",
-    icon: ClipboardList,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Nutricional.",
   },
@@ -104,7 +90,6 @@ export const SERVICES: readonly Service[] = [
     title: "Acompanhamento e Monitoramento",
     description:
       "Retornos em datas definidas para acompanhar desempenho e evolução, com ajustes sempre que preciso.",
-    icon: CalendarCheck,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de saber mais sobre o Acompanhamento e Monitoramento.",
   },
@@ -113,22 +98,64 @@ export const SERVICES: readonly Service[] = [
     title: "Saúde e Bem-estar",
     description:
       "Corrigir deficiências nutricionais e prevenir doenças por meio de uma boa alimentação.",
-    icon: HeartPulse,
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Saúde e Bem-estar.",
   },
 ];
 
+export const MARQUEE = [
+  "Emagrecimento",
+  "Reeducação alimentar",
+  "Hipertrofia",
+  "Avaliação nutricional",
+  "Acompanhamento",
+  "Saúde e bem-estar",
+] as const;
+
+export const STATEMENT = {
+  eyebrow: "Meu jeito de cuidar",
+  before: "Cuidar da alimentação não é sobre restrição.",
+  emphasis: "É ter liberdade",
+  after: "para viver com saúde, energia e qualidade de vida.",
+} as const;
+
+export interface ProcessStep {
+  title: string;
+  description: string;
+}
+
+export const PROCESS_STEPS: readonly ProcessStep[] = [
+  {
+    title: "Conversa e histórico",
+    description: "Entendo a sua rotina, os seus hábitos e o que você quer conquistar.",
+  },
+  {
+    title: "Avaliação nutricional",
+    description: "Medidas corporais e percentual de gordura para conhecer o seu ponto de partida.",
+  },
+  {
+    title: "Plano personalizado",
+    description: "Alimentação planejada para a sua fase de vida, sem fórmulas prontas.",
+  },
+  {
+    title: "Acompanhamento",
+    description: "Retornos em datas definidas para acompanhar a sua evolução e ajustar o que for preciso.",
+  },
+];
+
 export const ABOUT = {
-  eyebrow: "Sobre mim",
+  eyebrow: "Um pouco mais de mim",
   title: "Oi, eu sou a Evelyn.",
   quote: "Acredito que Nutrição e Equilíbrio andam juntos.",
   paragraphs: [
-    "Sou apaixonada em como a alimentação pode transformar gerações. Para mim, cuidar da alimentação não é restrição: é ter liberdade para viver com mais saúde, energia e qualidade de vida.",
-    "Cada pessoa é única, então cada plano também é. Escuto a sua história, avalio o seu corpo e construo junto com você hábitos que fazem sentido no seu dia a dia.",
-    "A minha maior felicidade é ver os meus pacientes progredindo.",
+    "Sou natural de Recife-PE e moro em Anápolis-GO, onde fiz a minha graduação. Sou cristã, amo a Deus e sou muito grata por cada oportunidade.",
+    "Amo a minha família e os meus amigos. Sou apaixonada em como a alimentação pode transformar gerações, e a minha maior felicidade é ver os meus pacientes progredindo.",
   ],
-  highlights: ["Atendimento humanizado", "Plano individual", "Acompanhamento de perto"],
+  facts: [
+    { label: "De onde vim", value: "Recife-PE" },
+    { label: "Onde cuido de você", value: "Anápolis-GO" },
+    { label: "O que me move", value: "Fé, família e ver você evoluir" },
+  ],
 } as const;
 
 /**
