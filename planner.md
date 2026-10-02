@@ -331,6 +331,8 @@ Formato: `AAAA-MM-DD — tarefa(s) — resumo curto`. Mais recente no topo.
 
 **Automático:** `python3 scripts/atualizar-canvas.py` lê as tarefas deste arquivo (§7) e as pendências (§8) e regenera o canvas. Rodar depois de editar o planner.
 
+**Painel web:** `python3 scripts/gerar-painel.py` gera `painel-progresso.html`. Publicado como Artifact (privado): https://claude.ai/artifact/6a27ayr2zaiTwm3GB5XUbG . Para atualizar: rodar o script e republicar o mesmo arquivo.
+
 Manual (fallback):
 
 Abrir no Obsidian. Um nó por fase (F0–F9) + nó "Agora" + nó "Pendências".

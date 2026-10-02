@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "bb15d263d319785b",
+      "id": "33373697b48968ac",
       "type": "text",
       "x": 0,
       "y": 330,
@@ -11,7 +11,7 @@
       "color": "4"
     },
     {
-      "id": "f2aabd6bc7771d8d",
+      "id": "37a601b6269fa1e7",
       "type": "text",
       "x": 380,
       "y": 330,
@@ -21,7 +21,7 @@
       "color": "4"
     },
     {
-      "id": "854380fe62b003d1",
+      "id": "49b965f995bef97c",
       "type": "text",
       "x": 760,
       "y": 330,
@@ -31,7 +31,7 @@
       "color": "4"
     },
     {
-      "id": "159d7863feea8bbd",
+      "id": "255d2d5cda1da4e4",
       "type": "text",
       "x": 1140,
       "y": 330,
@@ -41,7 +41,7 @@
       "color": "4"
     },
     {
-      "id": "cd3732ff29bfa0cd",
+      "id": "25a364d6549db0ba",
       "type": "text",
       "x": 1520,
       "y": 330,
@@ -51,7 +51,7 @@
       "color": "4"
     },
     {
-      "id": "bdcc94a2d7e6dc92",
+      "id": "c202b41e70582746",
       "type": "text",
       "x": 0,
       "y": 770,
@@ -61,7 +61,7 @@
       "color": "4"
     },
     {
-      "id": "07cffb1c16d2322f",
+      "id": "e34ad50d1de9f132",
       "type": "text",
       "x": 380,
       "y": 770,
@@ -71,7 +71,7 @@
       "color": "4"
     },
     {
-      "id": "b6135fc26d637543",
+      "id": "03c44e8f41cf0b18",
       "type": "text",
       "x": 760,
       "y": 770,
@@ -81,7 +81,7 @@
       "color": "4"
     },
     {
-      "id": "c2359c6ef3b5e284",
+      "id": "b8abf2a2124ce1e4",
       "type": "text",
       "x": 1140,
       "y": 770,
@@ -91,7 +91,7 @@
       "color": "3"
     },
     {
-      "id": "a9fb326788583a29",
+      "id": "50ecdeba7ff793b5",
       "type": "text",
       "x": 1520,
       "y": 770,
@@ -100,7 +100,7 @@
       "text": "## F9 · Deploy\n**A FAZER** (0/7)\n\n- [ ] T9.0 Go-live blocker: substituir depoimentos DEMO…\n- [ ] T9.1 VPS Ubuntu, Node LTS, PM2 (pm2 start npm --n…\n- [ ] T9.2 Nginx proxy reverso 80/443 → 3000\n- [ ] T9.3 Certbot (Let's Encrypt) + renovação\n- [ ] T9.4 GitHub Actions: SSH → git pull → npm ci && n…\n- [ ] T9.5 Secrets no GitHub (host, user, key). .env de…\n- [ ] T9.6 DNS do domínio + smoke test em produção"
     },
     {
-      "id": "ea31587a2f4b96b6",
+      "id": "d9024fb1b804c602",
       "type": "text",
       "x": 0,
       "y": 0,
@@ -110,7 +110,7 @@
       "text": "# LP Evelyn Rafaela · Progresso\n**47/58 tarefas (81%)**\n\nNext.js + TS + Tailwind + Shadcn. Alvo: agendamento via WhatsApp.\n\nLegenda: sem cor = a fazer · amarelo = em andamento · verde = concluída · vermelho = bloqueada\n\nFonte da verdade: `planner.md`. Rodar `python3 scripts/atualizar-canvas.py` após editar."
     },
     {
-      "id": "c560d105600643d4",
+      "id": "b301a7935297d373",
       "type": "text",
       "x": 760,
       "y": 0,
@@ -120,7 +120,7 @@
       "text": "## AGORA\n**Tarefa:** T8.2 Lighthouse mobile: Performance ≥ 90, Acessib…\n**Próxima:** T8.4 Teclado: tab order, focus-visible visível em…\n\n_Atualizado: 2026-10-01_"
     },
     {
-      "id": "eb4601e799edeff0",
+      "id": "b55f7c090ce59f4a",
       "type": "text",
       "x": 1240,
       "y": 0,
@@ -132,74 +132,74 @@
   ],
   "edges": [
     {
-      "id": "fe50f34911c59d45",
-      "fromNode": "bb15d263d319785b",
+      "id": "23bbbcdece8f0f21",
+      "fromNode": "33373697b48968ac",
       "fromSide": "right",
-      "toNode": "f2aabd6bc7771d8d",
+      "toNode": "37a601b6269fa1e7",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "73880bc37acf415e",
-      "fromNode": "f2aabd6bc7771d8d",
+      "id": "611d39cdce5fb8f9",
+      "fromNode": "37a601b6269fa1e7",
       "fromSide": "right",
-      "toNode": "854380fe62b003d1",
+      "toNode": "49b965f995bef97c",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "b110ba763d36a221",
-      "fromNode": "854380fe62b003d1",
+      "id": "609e5453d9d85147",
+      "fromNode": "49b965f995bef97c",
       "fromSide": "right",
-      "toNode": "159d7863feea8bbd",
+      "toNode": "255d2d5cda1da4e4",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "5f8c6d86fd0c96d7",
-      "fromNode": "159d7863feea8bbd",
+      "id": "09b17f696729eac0",
+      "fromNode": "255d2d5cda1da4e4",
       "fromSide": "right",
-      "toNode": "cd3732ff29bfa0cd",
+      "toNode": "25a364d6549db0ba",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "eb4abe8b63e76878",
-      "fromNode": "cd3732ff29bfa0cd",
+      "id": "08a64296fade3962",
+      "fromNode": "25a364d6549db0ba",
       "fromSide": "bottom",
-      "toNode": "bdcc94a2d7e6dc92",
+      "toNode": "c202b41e70582746",
       "toSide": "top",
       "toEnd": "arrow"
     },
     {
-      "id": "548b53d6cdbdaf96",
-      "fromNode": "bdcc94a2d7e6dc92",
+      "id": "731f83da18de0f18",
+      "fromNode": "c202b41e70582746",
       "fromSide": "right",
-      "toNode": "07cffb1c16d2322f",
+      "toNode": "e34ad50d1de9f132",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "4b98faa4cc8fd091",
-      "fromNode": "07cffb1c16d2322f",
+      "id": "9886d18351403220",
+      "fromNode": "e34ad50d1de9f132",
       "fromSide": "right",
-      "toNode": "b6135fc26d637543",
+      "toNode": "03c44e8f41cf0b18",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "f8e285512c6890d0",
-      "fromNode": "b6135fc26d637543",
+      "id": "e9819b9d56d70b27",
+      "fromNode": "03c44e8f41cf0b18",
       "fromSide": "right",
-      "toNode": "c2359c6ef3b5e284",
+      "toNode": "b8abf2a2124ce1e4",
       "toSide": "left",
       "toEnd": "arrow"
     },
     {
-      "id": "5bc08e3480b08f75",
-      "fromNode": "c2359c6ef3b5e284",
+      "id": "6cd29e1b536354a8",
+      "fromNode": "b8abf2a2124ce1e4",
       "fromSide": "right",
-      "toNode": "a9fb326788583a29",
+      "toNode": "50ecdeba7ff793b5",
       "toSide": "left",
       "toEnd": "arrow"
     }
