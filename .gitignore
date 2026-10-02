@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+!.env.example
+
+# material local do projeto (originais, referências, config do Claude)
+/assets/
+/design de referencia/
+/.claude/

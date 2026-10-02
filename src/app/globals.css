@@ -1,26 +1,84 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-lato);
+  --font-heading: var(--font-cormorant);
+  --font-serif: var(--font-cormorant);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Paleta da marca (logo): creme + verde oliva. Dourado = destaque único. */
+:root {
+  --background: #fdfbf7;
+  --foreground: #2c4027;
+  --card: #ffffff;
+  --card-foreground: #2c4027;
+  --popover: #ffffff;
+  --popover-foreground: #2c4027;
+  --primary: #2c4027;
+  --primary-foreground: #fdfbf7;
+  --secondary: #f3efe6;
+  --secondary-foreground: #2c4027;
+  --muted: #f3efe6;
+  --muted-foreground: #5f6b5a;
+  --accent: #f3efe6;
+  --accent-foreground: #2c4027;
+  --destructive: #a8332a;
+  --border: rgb(44 64 39 / 0.14);
+  --input: rgb(44 64 39 / 0.2);
+  --ring: #a8895b;
+  --gold: #a8895b;
+  --gold-ink: #7d6334;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading tracking-tight;
+  }
+  section[id] {
+    scroll-margin-top: 4.5rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
