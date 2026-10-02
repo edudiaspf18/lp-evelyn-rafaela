@@ -27,7 +27,7 @@ const VARIANT_CLASSES: Record<Variant, string> = {
     "h-12 rounded-full border-primary/30 bg-transparent px-7 text-base text-primary hover:bg-primary/5",
   light:
     "h-12 rounded-full bg-background px-7 text-base text-primary hover:bg-background/90",
-  link: "h-auto gap-1.5 rounded-none border-0 bg-transparent p-0 hover:bg-transparent text-sm font-bold text-gold-ink underline decoration-gold/50 underline-offset-4 hover:decoration-gold-ink",
+  link: "h-auto min-h-11 gap-1.5 rounded-none border-0 bg-transparent p-0 hover:bg-transparent text-sm font-bold text-gold-ink underline decoration-gold/50 underline-offset-4 hover:decoration-gold-ink",
 };
 
 const BASE_CLASSES =

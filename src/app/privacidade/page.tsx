@@ -32,8 +32,8 @@ export default function PrivacyPage() {
           Com o seu consentimento, usamos Google Analytics e Meta Pixel para
           entender de onde vêm as visitas e quais botões são clicados. Sem o seu
           aceite, esses scripts não são carregados. Você pode recusar sem perder
-          nenhuma funcionalidade do site. Para rever a escolha, limpe os dados
-          do site no seu navegador.
+          nenhuma funcionalidade do site. Para rever a escolha, use o botão
+          &ldquo;Gerenciar cookies&rdquo; no rodapé do site.
         </p>
         <h2 className="text-3xl font-medium text-foreground">Seus direitos (LGPD)</h2>
         <p>

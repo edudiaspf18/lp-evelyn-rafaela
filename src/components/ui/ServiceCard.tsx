@@ -15,7 +15,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
     <article className="group flex flex-col bg-card p-8 transition-all duration-200 ease-in-out hover:bg-background">
       <div className="flex items-start justify-between">
         <Icon className="size-8 text-primary" strokeWidth={1.25} aria-hidden="true" />
-        <span className="font-heading text-xl text-gold">0{index + 1}</span>
+        <span className="font-heading text-xl text-gold-ink">0{index + 1}</span>
       </div>
       <h3 className="mt-8 text-2xl leading-tight font-medium">{service.title}</h3>
       <p className="mt-3 mb-8 text-sm leading-relaxed text-muted-foreground">

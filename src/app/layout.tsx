@@ -80,9 +80,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${lato.variable} h-full`}>
       <body className="flex min-h-full flex-col">
+        {/* Banner antes do conteúdo no DOM: teclado/leitor de tela chegam nele primeiro (visual é fixed) */}
+        <CookieConsent />
         {children}
         <FloatingWhatsApp />
-        <CookieConsent />
         <TrackingScripts />
         <script
           type="application/ld+json"

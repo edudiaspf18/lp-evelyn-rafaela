@@ -37,6 +37,16 @@ export function setConsent(value: "granted" | "denied"): void {
   listeners.forEach((listener) => listener());
 }
 
+/** Apaga a escolha e reabre o banner (heurística: controle do usuário). */
+export function resetConsent(): void {
+  try {
+    window.localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    // storage bloqueado: nada a limpar
+  }
+  listeners.forEach((listener) => listener());
+}
+
 export function readConsent(): Consent {
   if (typeof window === "undefined") return "loading";
   return getSnapshot();

@@ -26,6 +26,7 @@
   --color-card: var(--card);
   --color-gold: var(--gold);
   --color-gold-ink: var(--gold-ink);
+  --color-gold-light: var(--gold-light);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -54,6 +55,7 @@
   --ring: #a8895b;
   --gold: #a8895b;
   --gold-ink: #7d6334;
+  --gold-light: #d1b88c;
   --radius: 0.5rem;
 }
 

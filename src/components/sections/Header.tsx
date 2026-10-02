@@ -16,8 +16,8 @@ export function Header() {
           <Image
             src="/images/monograma.png"
             alt=""
-            width={299}
-            height={260}
+            width={240}
+            height={212}
             className="h-9 w-auto"
             priority
           />
@@ -31,7 +31,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex min-h-11 items-center text-sm text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
             >
               {link.label}
             </a>
