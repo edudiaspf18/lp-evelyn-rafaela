@@ -282,10 +282,11 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` feito · `[!]` bloqueado
 - [x] T7.4 HTML semântico: um `h1`, `header/main/section/footer`, landmarks, ordem de headings
 
 ### F8 — QA
+- [x] T8.10 Rodada Nielsen: botão "Gerenciar cookies" no footer, 404 própria, alvos de toque ≥ 44px, contraste do dourado corrigido, banner antes do conteúdo no DOM
 - [x] T8.1 `npm run lint`, `tsc --noEmit`, `npm run build` limpos
-- [ ] T8.2 Lighthouse mobile: Performance ≥ 90, Acessibilidade ≥ 95, SEO ≥ 95, Best Practices ≥ 95
+- [x] T8.2 Lighthouse mobile: Performance ≥ 90, Acessibilidade ≥ 95, SEO ≥ 95, Best Practices ≥ 95 (medido: mobile 92/100/100/100, desktop 100/100/100/100)
 - [x] T8.3 Teste manual 375 / 768 / 1280. Sem scroll horizontal
-- [ ] T8.4 Teclado: tab order, `focus-visible` visível em tudo
+- [x] T8.4 Teclado: tab order, `focus-visible` visível em tudo
 - [x] T8.5 Link WhatsApp abre com mensagem certa em cada CTA e em cada card
 - [x] T8.6 Teste UTM: `/?utm_source=instagram&utm_medium=stories&utm_campaign=agenda_aberta`
 - [ ] T8.7 Revisão Tech Lead (re-render, memory leak, promise sem catch)
@@ -323,6 +324,7 @@ Regra: pendência não bloqueia fase inteira. Seguir com placeholder `TODO(evely
 
 Formato: `AAAA-MM-DD — tarefa(s) — resumo curto`. Mais recente no topo.
 
+- 2026-10-01 — T8.2, T8.4, T8.10 — Lighthouse mobile 92/100/100/100 e desktop 100/100/100/100. Teclado: 32 paradas de Tab, todas com foco visível, banner e menu operáveis por teclado. Correções de heurísticas (cookies, 404, toque, contraste).
 - 2026-10-01 — F1–F7, T8.1/T8.3/T8.5/T8.6 — página completa (Header, Hero, Diferenciais, Serviços, Sobre, Depoimentos DEMO, FAQ, CTA, Footer), LGPD, tracking, SEO. Build limpo. UTM validado. Fotos tratadas.
 - 2026-10-01 — §0 — regras de commit em português + tarefa README (T8.9) adicionadas.
 - 2026-10-01 — T0.1–T0.3 — planner e canvas criados. Código ainda não iniciado.
