@@ -12,7 +12,7 @@ export function About() {
           <p className="reveal mb-5 text-xs font-medium tracking-[0.32em] text-gold-ink uppercase">
             {ABOUT.eyebrow}
           </p>
-          <h2 className="reveal text-5xl leading-[1] font-light md:text-7xl">{ABOUT.title}</h2>
+          <h2 className="reveal text-5xl leading-[1] font-light break-words md:text-6xl lg:text-7xl">{ABOUT.title}</h2>
 
           <blockquote className="reveal mt-10 border-l border-gold pl-6 font-heading text-2xl leading-snug font-light text-primary italic md:text-3xl">
             {ABOUT.quote}

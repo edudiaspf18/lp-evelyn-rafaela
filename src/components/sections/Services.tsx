@@ -10,7 +10,7 @@ export function Services() {
             <p className="mb-5 text-xs font-medium tracking-[0.32em] text-gold-ink uppercase">
               Especialidades
             </p>
-            <h2 className="text-4xl leading-[1.04] font-light text-balance md:text-6xl">
+            <h2 className="text-4xl leading-[1.04] font-light text-balance break-words md:text-5xl lg:text-6xl">
               Cuidado nutricional para cada momento da sua vida
             </h2>
           </div>

@@ -27,7 +27,7 @@ export function Process() {
           <p className="reveal mb-5 text-xs font-medium tracking-[0.32em] text-gold-ink uppercase">
             Como é a consulta
           </p>
-          <h2 className="reveal text-4xl leading-[1.04] font-light text-balance md:text-6xl">
+          <h2 className="reveal text-4xl leading-[1.04] font-light text-balance break-words md:text-5xl lg:text-6xl">
             Do primeiro papo ao acompanhamento
           </h2>
 

@@ -9,7 +9,7 @@ export function FinalCta() {
           <p className="mb-4 text-xs font-medium tracking-[0.32em] text-gold-light uppercase">
             Agenda aberta
           </p>
-          <h2 id="cta-final" className="text-4xl leading-[1.02] font-light text-balance md:text-6xl">
+          <h2 id="cta-final" className="text-4xl leading-[1.02] font-light text-balance break-words md:text-5xl lg:text-6xl">
             Está na hora de viver de novo.
           </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/80">

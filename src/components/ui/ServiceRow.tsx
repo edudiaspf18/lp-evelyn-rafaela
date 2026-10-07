@@ -15,7 +15,7 @@ export function ServiceRow({ service, index }: ServiceRowProps) {
       <span className="text-xs font-medium tracking-[0.3em] text-gold-ink transition-all duration-300 group-hover:text-gold-light md:col-span-1">
         0{index + 1}
       </span>
-      <h3 className="text-3xl leading-tight font-light transition-all duration-300 group-hover:text-primary-foreground md:col-span-4 md:text-4xl">
+      <h3 className="text-3xl leading-tight font-light transition-all duration-300 group-hover:text-primary-foreground break-words md:col-span-4 md:text-3xl lg:text-4xl">
         {service.title}
       </h3>
       <p className="leading-relaxed text-muted-foreground transition-all duration-300 group-hover:text-primary-foreground/80 md:col-span-5">
