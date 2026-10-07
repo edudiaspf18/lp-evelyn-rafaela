@@ -24,7 +24,7 @@ const jost = Jost({
 });
 
 const DESCRIPTION =
-  "A Nutrição é mais que estética, é poder viver de novo! Agende sua consulta com a nutricionista Evelyn Rafaela em Anápolis-GO e transforme sua relação com a comida.";
+  "Nutricionista em Anápolis-GO. Atendimento presencial e personalizado para emagrecimento, hipertrofia e reeducação alimentar. Agende com Evelyn Rafaela.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "Evelyn Rafaela - Nutricionista",
-    description: "Atendimento nutricional personalizado. Agende sua consulta.",
+    description: DESCRIPTION,
     url: SITE_URL,
     siteName: "Evelyn Rafaela Nutrição",
     images: [

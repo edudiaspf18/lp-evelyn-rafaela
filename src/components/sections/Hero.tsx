@@ -17,7 +17,7 @@ export function Hero() {
         <div className="relative z-10 md:col-span-7 md:self-center">
           <p className="rise-in mb-7 flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium tracking-[0.2em] text-gold-ink uppercase sm:tracking-[0.32em]">
             <span>{HERO.eyebrow}</span>
-            <span aria-hidden="true">·</span>
+            <span aria-hidden="true" className="hidden sm:inline">·</span>
             <span className="whitespace-nowrap">{CRN}</span>
           </p>
           <h1 className="slide-in text-[clamp(2.25rem,11.5vw,2.9rem)] leading-[1] font-light sm:text-6xl sm:text-balance lg:text-[5.2rem]">
