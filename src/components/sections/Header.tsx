@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { MobileMenu } from "@/components/sections/MobileMenu";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { NAV_LINKS, WHATSAPP_GENERIC_MESSAGE } from "@/data/content";
+import { INSTAGRAM_URL } from "@/lib/env";
 
 export function Header() {
   return (
@@ -36,6 +38,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <InstagramIcon className="size-4" />
+            Instagram
+          </a>
         </nav>
 
         <div className="flex items-center gap-3">

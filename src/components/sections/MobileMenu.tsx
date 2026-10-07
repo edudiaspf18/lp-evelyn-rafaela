@@ -4,7 +4,9 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { NAV_LINKS } from "@/data/content";
+import { INSTAGRAM_URL } from "@/lib/env";
 
 /** Menu mobile (único pedaço do Header que precisa de estado). */
 export function MobileMenu() {
@@ -31,6 +33,16 @@ export function MobileMenu() {
               {link.label}
             </a>
           ))}
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-3 border-b border-border py-4 font-heading text-2xl transition-all duration-200 hover:text-gold-ink focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <InstagramIcon className="size-6" />
+            Instagram
+          </a>
         </nav>
       </SheetContent>
     </Sheet>

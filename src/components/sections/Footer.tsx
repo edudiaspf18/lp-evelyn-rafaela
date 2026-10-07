@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AtSign, Clock, MapPin, MessageCircle } from "lucide-react";
+import { Clock, MapPin, MessageCircle } from "lucide-react";
 
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { ManageCookiesButton } from "@/components/ManageCookiesButton";
 import { CLINIC } from "@/data/content";
-import { INSTAGRAM_URL, WHATSAPP_NUMBER } from "@/lib/env";
+import { INSTAGRAM_HANDLE, INSTAGRAM_URL, WHATSAPP_NUMBER } from "@/lib/env";
 import { generateWhatsAppLink } from "@/lib/utils";
 
 const LINK_CLASSES =
@@ -47,8 +48,8 @@ export function Footer() {
             {formatPhone(WHATSAPP_NUMBER)}
           </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={LINK_CLASSES}>
-            <AtSign className="size-4" aria-hidden="true" />
-            evelynrafaelanutrii
+            <InstagramIcon className="size-4" />
+            @{INSTAGRAM_HANDLE}
           </a>
         </div>
 

@@ -10,6 +10,10 @@ export const INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
   "https://www.instagram.com/evelynrafaelanutrii/";
 
+/** @ exibido, derivado da URL do perfil */
+export const INSTAGRAM_HANDLE =
+  INSTAGRAM_URL.replace(/\/+$/, "").split("/").pop() ?? "";
+
 // IDs entram em script inline: aceitar só o formato esperado (bloqueia injeção via .env)
 const GA_ID_RAW = process.env.NEXT_PUBLIC_GA_ID ?? "";
 export const GA_ID = /^[A-Z0-9-]{4,20}$/.test(GA_ID_RAW) ? GA_ID_RAW : "";
