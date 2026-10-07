@@ -23,7 +23,6 @@ export const WHATSAPP_GENERIC_MESSAGE =
 export const NAV_LINKS = [
   { href: "#servicos", label: "Serviços" },
   { href: "#sobre", label: "Sobre" },
-  { href: "#depoimentos", label: "Depoimentos" },
   { href: "#duvidas", label: "Dúvidas" },
 ] as const;
 
@@ -159,28 +158,14 @@ export const ABOUT = {
 } as const;
 
 /**
- * DEMO: depoimentos fictícios apenas para apresentação do layout à cliente.
- * Substituir por depoimentos reais (com autorização) ou esvaziar o array antes de publicar.
+ * Seção oculta enquanto vazio. Preencher com depoimentos reais (com autorização) para reativar.
  */
-export const TESTIMONIALS_ARE_DEMO = true;
+export const TESTIMONIALS_ARE_DEMO = false;
 
-export const TESTIMONIALS: readonly Testimonial[] = [
-  {
-    name: "Paciente A.",
-    context: "Emagrecimento",
-    text: "Pela primeira vez um plano que cabe na minha rotina. Perdi peso sem passar fome e sem culpa.",
-  },
-  {
-    name: "Paciente B.",
-    context: "Hipertrofia",
-    text: "Ajustou a minha alimentação ao treino e a evolução veio. Os retornos me mantiveram no foco.",
-  },
-  {
-    name: "Paciente C.",
-    context: "Reeducação alimentar",
-    text: "Aprendi a escolher melhor sem abrir mão do que eu gosto. Atendimento muito atencioso.",
-  },
-];
+export const TESTIMONIALS: readonly Testimonial[] = [];
+
+/** Preencher com o número do registro (ex.: "CRN-1 12345") para exibir na faixa de credenciais */
+export const CRN = "";
 
 export const FAQ: readonly FaqItem[] = [
   {

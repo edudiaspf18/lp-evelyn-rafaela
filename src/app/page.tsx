@@ -1,4 +1,5 @@
 import { About } from "@/components/sections/About";
+import { Credentials } from "@/components/sections/Credentials";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
@@ -8,7 +9,6 @@ import { Marquee } from "@/components/sections/Marquee";
 import { Process } from "@/components/sections/Process";
 import { Statement } from "@/components/sections/Statement";
 import { Services } from "@/components/sections/Services";
-import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <Services />
         <Process />
         <About />
-        <Testimonials />
+        <Credentials />
         <FAQ />
         <FinalCta />
       </main>

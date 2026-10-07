@@ -67,12 +67,19 @@ function WhatsAppAnchor({
   );
 }
 
+/** UTM vem da URL (não confiável): limita tamanho e caracteres antes de ir ao GA/Pixel */
+function cleanUtm(value: string | null): string | null {
+  if (!value) return null;
+  const clean = value.replace(/[^\w\-.+ ]/g, "").slice(0, 60);
+  return clean || null;
+}
+
 function WhatsAppWithUtm(props: WhatsAppButtonProps) {
   const searchParams = useSearchParams();
   const utm: UtmParams = {
-    source: searchParams.get("utm_source"),
-    medium: searchParams.get("utm_medium"),
-    campaign: searchParams.get("utm_campaign"),
+    source: cleanUtm(searchParams.get("utm_source")),
+    medium: cleanUtm(searchParams.get("utm_medium")),
+    campaign: cleanUtm(searchParams.get("utm_campaign")),
   };
   return <WhatsAppAnchor {...props} utm={utm} />;
 }
