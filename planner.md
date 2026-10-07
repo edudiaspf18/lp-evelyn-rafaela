@@ -200,7 +200,7 @@ NEXT_PUBLIC_META_PIXEL_ID=                  # vazio = Pixel desligado
 1. Emagrecimento — orientação para perda de peso conforme contexto de vida.
 2. Reeducação Alimentar — educação alimentar e nutricional, boas escolhas e métodos.
 3. Hipertrofia — ganho de massa muscular com plano alimentar alinhado ao treino.
-4. Avaliação Nutricional — medidas corporais, percentual de gordura corporal, riscos.
+4. Avaliação Física — medidas corporais, percentual de gordura corporal, riscos.
 5. Acompanhamento e Monitoramento — retornos em datas definidas, evolução.
 6. Saúde e Bem-estar — corrigir deficiências, prevenir doenças pela alimentação.
 

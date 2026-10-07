@@ -22,6 +22,7 @@ export const WHATSAPP_GENERIC_MESSAGE =
 
 export const NAV_LINKS = [
   { href: "#servicos", label: "Serviços" },
+  { href: "#avaliacao-fisica", label: "Avaliação física" },
   { href: "#sobre", label: "Sobre" },
   { href: "#duvidas", label: "Dúvidas" },
 ] as const;
@@ -77,12 +78,12 @@ export const SERVICES: readonly Service[] = [
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Hipertrofia.",
   },
   {
-    id: "avaliacao-nutricional",
-    title: "Avaliação Nutricional",
+    id: "avaliacao-fisica",
+    title: "Avaliação Física",
     description:
-      "Medidas corporais, percentual de gordura e riscos à saúde: entender o seu corpo é o primeiro passo.",
+      "Medição do percentual de gordura por bioimpedância: entender o seu corpo é o primeiro passo.",
     message:
-      "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Nutricional.",
+      "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Física.",
   },
   {
     id: "acompanhamento",
@@ -106,7 +107,7 @@ export const MARQUEE = [
   "Emagrecimento",
   "Reeducação alimentar",
   "Hipertrofia",
-  "Avaliação nutricional",
+  "Avaliação física",
   "Acompanhamento",
   "Saúde e bem-estar",
 ] as const;
@@ -116,6 +117,35 @@ export const STATEMENT = {
   before: "Cuidar da alimentação não é sobre restrição.",
   emphasis: "É ter liberdade",
   after: "para viver com saúde, energia e qualidade de vida.",
+} as const;
+
+export const PHYSICAL_ASSESSMENT = {
+  eyebrow: "Avaliação física",
+  title: "Conheça a sua composição corporal",
+  intro:
+    "Medição do percentual de gordura com equipamento de bioimpedância. É feita à parte da consulta, para quem quer acompanhar de perto a própria evolução.",
+  priceLabel: "Consultas a partir de",
+  price: "R$ 170",
+  priceNote: "A avaliação física é cobrada à parte. Valores completos pelo WhatsApp.",
+  steps: [
+    {
+      title: "Bioimpedância",
+      description: "Equipamento que mede o percentual de gordura corporal, de forma simples e sem dor.",
+    },
+    {
+      title: "Sem preparo para levar",
+      description: "Você não precisa levar nada. É só comparecer ao horário agendado.",
+    },
+    {
+      title: "Anamnese",
+      description: "Uma conversa sobre o seu histórico, a sua rotina e os seus objetivos.",
+    },
+    {
+      title: "Exames, se necessário",
+      description: "Quando fizer sentido, a Evelyn pede exames para complementar a avaliação.",
+    },
+  ],
+  message: "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Física.",
 } as const;
 
 export interface ProcessStep {
@@ -129,8 +159,8 @@ export const PROCESS_STEPS: readonly ProcessStep[] = [
     description: "Entendo a sua rotina, os seus hábitos e o que você quer conquistar.",
   },
   {
-    title: "Avaliação nutricional",
-    description: "Medidas corporais e percentual de gordura para conhecer o seu ponto de partida.",
+    title: "Avaliação física",
+    description: "Quando faz sentido, medição de gordura por bioimpedância para conhecer o seu ponto de partida.",
   },
   {
     title: "Plano personalizado",
@@ -165,13 +195,13 @@ export const TESTIMONIALS_ARE_DEMO = false;
 export const TESTIMONIALS: readonly Testimonial[] = [];
 
 /** Preencher com o número do registro (ex.: "CRN-1 12345") para exibir na faixa de credenciais */
-export const CRN = "";
+export const CRN = "CRN-1 | 26364/P";
 
 export const FAQ: readonly FaqItem[] = [
   {
     question: "Como funciona a primeira consulta?",
     answer:
-      "Começamos com uma conversa sobre a sua rotina, histórico e objetivos, seguida da avaliação nutricional com as suas medidas. Ao final, você já sai sabendo os próximos passos.",
+      "Começamos com uma conversa sobre a sua rotina, histórico e objetivos, e, se você quiser, a avaliação física por bioimpedância, que é feita à parte. Ao final, você já sai sabendo os próximos passos.",
   },
   {
     question: "Preciso querer emagrecer para ir à nutricionista?",

@@ -23,17 +23,17 @@ export function Header() {
             className="h-9 w-auto"
             priority
           />
-          <span className="text-[13px] font-normal tracking-[0.34em] uppercase">
+          <span className="text-[13px] font-normal tracking-[0.34em] whitespace-nowrap uppercase">
             Evelyn Rafaela
           </span>
         </a>
 
-        <nav aria-label="Principal" className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Principal" className="hidden items-center gap-4 md:flex lg:gap-8">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="inline-flex min-h-11 items-center text-sm text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex min-h-11 items-center text-sm whitespace-nowrap text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
             >
               {link.label}
             </a>
@@ -42,10 +42,10 @@ export function Header() {
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center gap-1.5 text-sm text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm whitespace-nowrap text-muted-foreground transition-all duration-200 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
           >
             <InstagramIcon className="size-4" />
-            Instagram
+            <span className="sr-only lg:not-sr-only">Instagram</span>
           </a>
         </nav>
 
