@@ -28,7 +28,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO = {
-  eyebrow: "Nutricionista · CRN-1 | 26364/P",
+  eyebrow: "Nutricionista",
   titleBefore: "A Nutrição é mais que estética, é poder",
   titleEmphasis: "viver de novo!",
   subtitle:

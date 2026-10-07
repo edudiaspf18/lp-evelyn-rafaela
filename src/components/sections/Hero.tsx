@@ -3,7 +3,7 @@ import { ArrowDown, MapPin } from "lucide-react";
 
 import { Apple, Sprig } from "@/components/ui/Botanical";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { HERO, WHATSAPP_GENERIC_MESSAGE } from "@/data/content";
+import { CRN, HERO, WHATSAPP_GENERIC_MESSAGE } from "@/data/content";
 
 export function Hero() {
   return (
@@ -13,12 +13,14 @@ export function Hero() {
         strokeWidth={1}
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-14 px-5 pt-10 pb-20 md:grid-cols-12 md:gap-6 md:px-8 md:pt-16 md:pb-28">
+      <div className="relative mx-auto grid max-w-6xl gap-14 px-5 pt-10 pb-24 md:grid-cols-12 md:gap-6 md:px-8 md:pt-16 md:pb-28">
         <div className="relative z-10 md:col-span-7 md:self-center">
-          <p className="rise-in mb-7 text-xs font-medium tracking-[0.32em] text-gold-ink uppercase">
-            {HERO.eyebrow}
+          <p className="rise-in mb-7 flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium tracking-[0.2em] text-gold-ink uppercase sm:tracking-[0.32em]">
+            <span>{HERO.eyebrow}</span>
+            <span aria-hidden="true">·</span>
+            <span className="whitespace-nowrap">{CRN}</span>
           </p>
-          <h1 className="slide-in text-[2.9rem] leading-[0.98] font-light text-balance sm:text-6xl lg:text-[5.2rem]">
+          <h1 className="slide-in text-[clamp(2.25rem,11.5vw,2.9rem)] leading-[1] font-light sm:text-6xl sm:text-balance lg:text-[5.2rem]">
             {HERO.titleBefore}{" "}
             <em className="font-normal text-gold-ink italic">{HERO.titleEmphasis}</em>
           </h1>
@@ -67,7 +69,7 @@ export function Hero() {
             Evelyn Rafaela
             <span className="block text-[10px] tracking-[0.34em] text-gold-ink">Nutricionista</span>
           </figcaption>
-          <Sprig className="absolute -top-12 -right-3 z-10 h-48 text-gold md:-top-14 md:-right-8 md:h-60" />
+          <Sprig className="absolute -top-9 -right-2 z-10 h-36 text-gold sm:-top-12 sm:-right-3 sm:h-48 md:-top-14 md:-right-8 md:h-60" />
         </figure>
       </div>
     </section>
