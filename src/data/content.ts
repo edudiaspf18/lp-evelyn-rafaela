@@ -28,7 +28,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO = {
-  eyebrow: "Nutricionista · Anápolis-GO",
+  eyebrow: "Nutricionista · CRN-1 | 26364/P",
   titleBefore: "A Nutrição é mais que estética, é poder",
   titleEmphasis: "viver de novo!",
   subtitle:
@@ -97,7 +97,7 @@ export const SERVICES: readonly Service[] = [
     id: "saude-bem-estar",
     title: "Saúde e Bem-estar",
     description:
-      "Corrigir deficiências nutricionais e prevenir doenças por meio de uma boa alimentação.",
+      "Promover a saúde e corrigir deficiências nutricionais por meio de uma boa alimentação.",
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma consulta com foco em Saúde e Bem-estar.",
   },
@@ -124,9 +124,7 @@ export const PHYSICAL_ASSESSMENT = {
   title: "Conheça a sua composição corporal",
   intro:
     "Medição do percentual de gordura com equipamento de bioimpedância. É feita à parte da consulta, para quem quer acompanhar de perto a própria evolução.",
-  priceLabel: "Consultas a partir de",
-  price: "R$ 170",
-  priceNote: "A avaliação física é cobrada à parte. Valores completos pelo WhatsApp.",
+  note: "A avaliação física é feita à parte da consulta. Valores e condições são informados no atendimento, pelo WhatsApp.",
   steps: [
     {
       title: "Bioimpedância",

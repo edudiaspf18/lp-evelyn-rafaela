@@ -23,7 +23,7 @@ export function FinalCta() {
             origin="CTA final"
             variant="light"
           >
-            Quero Transformar Minha Saúde
+            Quero Cuidar da Minha Saúde
           </WhatsAppButton>
         </div>
       </div>

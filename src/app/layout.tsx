@@ -4,7 +4,7 @@ import { Fraunces, Jost } from "next/font/google";
 import { CookieConsent } from "@/components/CookieConsent";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { TrackingScripts } from "@/components/TrackingScripts";
-import { CLINIC } from "@/data/content";
+import { CLINIC, CRN } from "@/data/content";
 import { INSTAGRAM_URL, SITE_URL, WHATSAPP_NUMBER } from "@/lib/env";
 import "./globals.css";
 
@@ -65,7 +65,12 @@ const JSON_LD = {
   description: DESCRIPTION,
   telephone: `+${WHATSAPP_NUMBER}`,
   sameAs: [INSTAGRAM_URL],
-  founder: { "@type": "Person", name: "Evelyn Rafaela", jobTitle: "Nutricionista" },
+  founder: {
+    "@type": "Person",
+    name: "Evelyn Rafaela",
+    jobTitle: "Nutricionista",
+    identifier: CRN,
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. João Florentino, Quadra 09, Lote 20, Residencial Portal do Cerrado",

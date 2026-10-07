@@ -16,15 +16,9 @@ export function PhysicalAssessment() {
             {DATA.intro}
           </p>
 
-          <div className="reveal mt-10 border-l border-gold pl-6">
-            <p className="text-[11px] font-medium tracking-[0.28em] text-gold-ink uppercase">
-              {DATA.priceLabel}
-            </p>
-            <p className="mt-1 font-heading text-5xl font-light">{DATA.price}</p>
-            <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {DATA.priceNote}
-            </p>
-          </div>
+          <p className="reveal mt-10 max-w-sm border-l border-gold pl-6 text-sm leading-relaxed text-muted-foreground">
+            {DATA.note}
+          </p>
 
           <WhatsAppButton
             message={DATA.message}

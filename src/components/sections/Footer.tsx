@@ -4,7 +4,7 @@ import { Clock, MapPin, MessageCircle } from "lucide-react";
 
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { ManageCookiesButton } from "@/components/ManageCookiesButton";
-import { CLINIC } from "@/data/content";
+import { CLINIC, CRN } from "@/data/content";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL, WHATSAPP_NUMBER } from "@/lib/env";
 import { generateWhatsAppLink } from "@/lib/utils";
 
@@ -78,7 +78,9 @@ export function Footer() {
 
       <div className="border-t border-primary-foreground/15">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-primary-foreground/70 md:flex-row md:items-center md:justify-between md:px-8">
-          <p>© {new Date().getFullYear()} Evelyn Rafaela Nutricionista. Todos os direitos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} Evelyn Rafaela, Nutricionista · {CRN}. Todos os direitos reservados.
+          </p>
           <div className="flex flex-wrap gap-x-6">
             <Link href="/privacidade" className={`${LINK_CLASSES}`}>
               Política de privacidade
