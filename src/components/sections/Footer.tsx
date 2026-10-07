@@ -86,6 +86,17 @@ export function Footer() {
               Política de privacidade
             </Link>
             <ManageCookiesButton className={`${LINK_CLASSES}`} />
+            <span className="inline-flex min-h-11 items-center gap-1">
+              Desenvolvido por
+              <a
+                href="https://www.instagram.com/dudu_diaspf/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium underline underline-offset-4 transition-all duration-200 hover:text-gold-light focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                Winner Tech
+              </a>
+            </span>
           </div>
         </div>
       </div>
