@@ -237,7 +237,7 @@ export const ABOUT = {
   title: "Oi, eu sou a Evelyn.",
   quote: "Acredito que Nutrição e Equilíbrio andam juntos.",
   paragraphs: [
-    "Sou natural de Recife-PE e moro em Anápolis-GO, onde fiz a minha graduação. Sou cristã, amo a Deus e sou muito grata por cada oportunidade.",
+    "Sou natural de Recife-PE e moro em Anápolis-GO, onde me formei em Nutrição pela UniEvangélica. Sou cristã, amo a Deus e sou muito grata por cada oportunidade.",
     "Amo a minha família e os meus amigos. Sou apaixonada em como a alimentação pode transformar gerações, e a minha maior felicidade é ver os meus pacientes progredindo.",
   ],
   facts: [

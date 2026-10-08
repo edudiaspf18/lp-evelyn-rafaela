@@ -7,7 +7,7 @@ interface Credential {
 
 const CREDENTIALS: readonly Credential[] = [
   ...(CRN ? [{ label: "Registro", value: CRN }] : []),
-  { label: "Formação", value: "Nutrição, graduada em Anápolis-GO" },
+  { label: "Formação", value: "Nutrição, graduada na UniEvangélica" },
   { label: "Atendimento", value: "Presencial e online" },
   { label: "Agenda", value: CLINIC.hours },
 ];
