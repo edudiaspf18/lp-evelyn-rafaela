@@ -136,7 +136,7 @@ export const PLANS_SECTION = {
   title: "Como o acompanhamento nutricional pode ser feito",
   intro:
     "O atendimento é individual e o número de consultas depende do seu objetivo e da sua rotina. Estas são as formas de acompanhamento que a Evelyn oferece, para você entender como funciona.",
-  note: "Qual formato é indicado para cada pessoa é definido pela nutricionista na avaliação. Informações sobre condições de atendimento são passadas pelo WhatsApp.",
+  note: "O formato indicado para cada pessoa é definido pela nutricionista na avaliação. Informações sobre as condições de atendimento são passadas pelo WhatsApp.",
   cta: "Tirar dúvidas pelo WhatsApp",
   includedTitle: "Plano alimentar em todas as formas de acompanhamento",
   included:
