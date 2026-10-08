@@ -8,6 +8,7 @@ import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Marquee } from "@/components/sections/Marquee";
 import { PhysicalAssessment } from "@/components/sections/PhysicalAssessment";
+import { Plans } from "@/components/sections/Plans";
 import { Process } from "@/components/sections/Process";
 import { Statement } from "@/components/sections/Statement";
 import { Services } from "@/components/sections/Services";
@@ -21,6 +22,7 @@ export default function Home() {
         <Marquee />
         <Statement />
         <Services />
+        <Plans />
         <PhysicalAssessment />
         <Process />
         <About />

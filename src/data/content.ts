@@ -22,6 +22,7 @@ export const WHATSAPP_GENERIC_MESSAGE =
 
 export const NAV_LINKS = [
   { href: "#servicos", label: "Serviços" },
+  { href: "#planos", label: "Acompanhamento" },
   { href: "#avaliacao-fisica", label: "Avaliação física" },
   { href: "#sobre", label: "Sobre" },
   { href: "#duvidas", label: "Dúvidas" },
@@ -118,6 +119,59 @@ export const STATEMENT = {
   emphasis: "É ter liberdade",
   after: "para viver com saúde, energia e qualidade de vida.",
 } as const;
+
+export interface Plan {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  details: readonly string[];
+  /** Mensagem base do WhatsApp (UTM é acrescentado em runtime) */
+  message: string;
+}
+
+/** Conteúdo informativo, sem preço, desconto, promoção ou chamada de venda (CFN). */
+export const PLANS_SECTION = {
+  eyebrow: "Formas de acompanhamento",
+  title: "Como o acompanhamento nutricional pode ser feito",
+  intro:
+    "O atendimento é individual e o número de consultas depende do seu objetivo e da sua rotina. Estas são as formas de acompanhamento que a Evelyn oferece, para você entender como funciona.",
+  note: "Qual formato é indicado para cada pessoa é definido pela nutricionista na avaliação. Informações sobre condições de atendimento são passadas pelo WhatsApp.",
+  cta: "Tirar dúvidas pelo WhatsApp",
+} as const;
+
+export const PLANS: readonly Plan[] = [
+  {
+    id: "consulta-unica",
+    name: "Consulta única",
+    tagline: "Avaliação inicial",
+    description:
+      "Uma consulta para conhecer o seu histórico, a sua rotina e os seus objetivos, com orientação nutricional individualizada.",
+    details: ["1 consulta", "Anamnese e avaliação", "Orientação nutricional individualizada"],
+    message:
+      "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre a Consulta Única.",
+  },
+  {
+    id: "consulta-retorno",
+    name: "Consulta e retorno",
+    tagline: "Avaliação e reavaliação",
+    description:
+      "A consulta inicial seguida de um retorno, para reavaliar como a orientação funcionou na rotina e ajustar o que for preciso.",
+    details: ["1 consulta e 1 retorno", "Reavaliação da conduta", "Acompanhamento da evolução"],
+    message:
+      "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre Consulta e Retorno.",
+  },
+  {
+    id: "acompanhamento-trimestral",
+    name: "Acompanhamento trimestral",
+    tagline: "Acompanhamento contínuo",
+    description:
+      "Seis consultas ao longo de três meses, para quem precisa de um acompanhamento mais próximo e frequente.",
+    details: ["6 consultas em 3 meses", "Reavaliações periódicas", "Ajustes conforme a evolução"],
+    message:
+      "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre o Acompanhamento Trimestral.",
+  },
+];
 
 export const PHYSICAL_ASSESSMENT = {
   eyebrow: "Avaliação física",
