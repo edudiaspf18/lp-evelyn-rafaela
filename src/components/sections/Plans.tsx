@@ -43,7 +43,7 @@ export function Plans() {
                 message={plan.message}
                 origin={`Acompanhamento: ${plan.name}`}
                 variant="outline"
-                className="mt-10 w-full md:mt-auto"
+                className="mt-10 w-full hover:border-primary hover:bg-primary hover:text-primary-foreground md:mt-auto"
               >
                 {DATA.cta}
               </WhatsAppButton>
