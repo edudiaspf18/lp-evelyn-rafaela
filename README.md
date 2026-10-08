@@ -4,6 +4,24 @@ Landing page de conversão da nutricionista **Evelyn Rafaela** (Anápolis-GO). O
 
 > Slogan (H1): **"A Nutrição é mais que estética, é poder viver de novo!"**
 
+## Prévia
+
+![Hero](docs/preview/hero.png)
+
+| Serviços | Formas de acompanhamento |
+|---|---|
+| ![Serviços](docs/preview/servicos.png) | ![Acompanhamento](docs/preview/planos.png) |
+
+| Avaliação física | Como é a consulta |
+|---|---|
+| ![Avaliação física](docs/preview/avaliacao-fisica.png) | ![Consulta](docs/preview/consulta.png) |
+
+| Sobre | Dúvidas frequentes |
+|---|---|
+| ![Sobre](docs/preview/sobre.png) | ![Dúvidas](docs/preview/duvidas.png) |
+
+<p align="center"><img src="docs/preview/mobile.png" alt="Versão mobile: hero e serviços" width="640"></p>
+
 ## Stack
 
 - [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
