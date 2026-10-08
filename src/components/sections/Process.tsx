@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import consultaPhoto from "../../../public/images/consulta-evelyn.webp";
+
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { PROCESS_STEPS, WHATSAPP_GENERIC_MESSAGE } from "@/data/content";
 
@@ -11,7 +13,8 @@ export function Process() {
         <figure className="reveal md:sticky md:top-24 md:col-span-5 md:self-start">
           <div className="relative aspect-[4/5] overflow-hidden bg-primary">
             <Image
-              src="/images/consulta-evelyn.webp"
+              src={consultaPhoto}
+              placeholder="blur"
               alt="Evelyn Rafaela, nutricionista, de lado e sorrindo"
               fill
               sizes="(min-width: 768px) 40vw, 90vw"

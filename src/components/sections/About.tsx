@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import sobrePhoto from "../../../public/images/sobre-evelyn.webp";
+
 import { Citrus } from "@/components/ui/Botanical";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ABOUT, WHATSAPP_GENERIC_MESSAGE } from "@/data/content";
@@ -51,7 +53,8 @@ export function About() {
           />
           <div className="relative aspect-[4/5] overflow-hidden bg-primary">
             <Image
-              src="/images/sobre-evelyn.webp"
+              src={sobrePhoto}
+              placeholder="blur"
               alt="Evelyn Rafaela, nutricionista, sorrindo com a mão no rosto"
               fill
               sizes="(min-width: 768px) 38vw, 90vw"

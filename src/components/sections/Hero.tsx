@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+import heroPhoto from "../../../public/images/hero-evelyn.webp";
 import { ArrowDown, MapPin } from "lucide-react";
 
 import { Apple, Sprig } from "@/components/ui/Botanical";
@@ -57,7 +59,8 @@ export function Hero() {
           />
           <div className="unveil relative aspect-[4/5] overflow-hidden bg-primary">
             <Image
-              src="/images/hero-evelyn.webp"
+              src={heroPhoto}
+              placeholder="blur"
               alt="Evelyn Rafaela, nutricionista, sorrindo, em retrato de cintura para cima"
               fill
               priority
