@@ -12,10 +12,10 @@ export function Process() {
           <div className="relative aspect-[4/5] overflow-hidden bg-primary">
             <Image
               src="/images/consulta-evelyn.webp"
-              alt="Evelyn Rafaela, de jaleco branco, atendendo no computador"
+              alt="Evelyn Rafaela, nutricionista, de lado e sorrindo"
               fill
               sizes="(min-width: 768px) 40vw, 90vw"
-              className="object-cover object-[88%_30%] transition-all duration-700 ease-in-out hover:scale-[1.03]"
+              className="object-cover object-[50%_30%] transition-all duration-700 ease-in-out hover:scale-[1.03]"
             />
           </div>
           <figcaption className="mt-4 text-xs tracking-[0.3em] text-muted-foreground uppercase">

@@ -52,10 +52,10 @@ export function About() {
           <div className="relative aspect-[4/5] overflow-hidden bg-primary">
             <Image
               src="/images/sobre-evelyn.webp"
-              alt="Evelyn Rafaela, de vestido preto, sentada e sorrindo com o olhar baixo"
+              alt="Evelyn Rafaela, nutricionista, sorrindo com a mão no rosto"
               fill
               sizes="(min-width: 768px) 38vw, 90vw"
-              className="object-cover object-[70%_35%] transition-all duration-700 ease-in-out hover:scale-[1.03]"
+              className="object-cover object-[50%_30%] transition-all duration-700 ease-in-out hover:scale-[1.03]"
             />
           </div>
           <Citrus
