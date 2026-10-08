@@ -21,7 +21,12 @@ export function Plans() {
           </p>
         </div>
 
-        <ul className="mt-14 grid gap-px border border-primary/25 bg-primary/25 md:mt-20 md:grid-cols-3">
+        <div className="reveal mt-14 max-w-2xl border-l border-gold pl-6 md:mt-20">
+          <h3 className="text-xl font-normal md:text-2xl">{DATA.includedTitle}</h3>
+          <p className="mt-2 leading-relaxed text-muted-foreground">{DATA.included}</p>
+        </div>
+
+        <ul className="mt-10 grid gap-px border border-primary/25 bg-primary/25 md:mt-12 md:grid-cols-3">
           {PLANS.map((plan, index) => (
             <li key={plan.id} className="reveal flex flex-col bg-muted p-8 md:p-10">
               <span className="font-heading text-sm tracking-[0.2em] text-gold-ink">

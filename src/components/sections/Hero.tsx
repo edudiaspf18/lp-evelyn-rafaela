@@ -46,7 +46,7 @@ export function Hero() {
 
           <p className="rise-in mt-12 flex items-center gap-2 text-sm text-muted-foreground [--rise-delay:500ms]">
             <MapPin className="size-4 text-gold" aria-hidden="true" />
-            Atendimento presencial em Anápolis-GO, de segunda a sexta
+            Atendimento presencial em Anápolis-GO e online, de segunda a sexta
           </p>
         </div>
 

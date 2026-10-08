@@ -82,7 +82,7 @@ export const SERVICES: readonly Service[] = [
     id: "avaliacao-fisica",
     title: "Avaliação Física",
     description:
-      "Medição do percentual de gordura por bioimpedância: entender o seu corpo é o primeiro passo.",
+      "Medição do percentual de gordura com adipômetro, pelas dobras cutâneas: entender o seu corpo é o primeiro passo.",
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Física.",
   },
@@ -138,6 +138,9 @@ export const PLANS_SECTION = {
     "O atendimento é individual e o número de consultas depende do seu objetivo e da sua rotina. Estas são as formas de acompanhamento que a Evelyn oferece, para você entender como funciona.",
   note: "Qual formato é indicado para cada pessoa é definido pela nutricionista na avaliação. Informações sobre condições de atendimento são passadas pelo WhatsApp.",
   cta: "Tirar dúvidas pelo WhatsApp",
+  includedTitle: "Plano alimentar em todas as formas de acompanhamento",
+  included:
+    "Plano alimentar personalizado: alimentação planejada para cada fase e ciclo da vida, incluindo as suas preferências e ideias de receitas.",
 } as const;
 
 export const PLANS: readonly Plan[] = [
@@ -146,8 +149,8 @@ export const PLANS: readonly Plan[] = [
     name: "Consulta única",
     tagline: "Avaliação inicial",
     description:
-      "Uma consulta para conhecer o seu histórico, a sua rotina e os seus objetivos, com orientação nutricional individualizada.",
-    details: ["1 consulta", "Anamnese e avaliação", "Orientação nutricional individualizada"],
+      "Uma consulta para conhecer o seu histórico, a sua rotina e os seus objetivos, com plano alimentar personalizado.",
+    details: ["1 consulta", "Anamnese e avaliação", "Plano alimentar personalizado"],
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre a Consulta Única.",
   },
@@ -156,8 +159,12 @@ export const PLANS: readonly Plan[] = [
     name: "Consulta e retorno",
     tagline: "Avaliação e reavaliação",
     description:
-      "A consulta inicial seguida de um retorno, para reavaliar como a orientação funcionou na rotina e ajustar o que for preciso.",
-    details: ["1 consulta e 1 retorno", "Reavaliação da conduta", "Acompanhamento da evolução"],
+      "A consulta inicial com plano alimentar personalizado, seguida de um retorno para ajustar o plano e avaliar a sua evolução.",
+    details: [
+      "1 consulta e 1 retorno",
+      "Plano alimentar personalizado",
+      "No retorno: ajustes do plano e avaliação da evolução",
+    ],
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre Consulta e Retorno.",
   },
@@ -166,8 +173,12 @@ export const PLANS: readonly Plan[] = [
     name: "Acompanhamento trimestral",
     tagline: "Acompanhamento contínuo",
     description:
-      "Seis consultas ao longo de três meses, para quem precisa de um acompanhamento mais próximo e frequente.",
-    details: ["6 consultas em 3 meses", "Reavaliações periódicas", "Ajustes conforme a evolução"],
+      "Seis consultas ao longo de três meses, com plano alimentar personalizado e acompanhamento mais próximo e frequente.",
+    details: [
+      "6 consultas em 3 meses",
+      "Plano alimentar personalizado",
+      "Nos retornos: ajustes do plano e avaliação da evolução",
+    ],
     message:
       "Olá Evelyn, vim pelo seu site e gostaria de tirar dúvidas sobre o Acompanhamento Trimestral.",
   },
@@ -177,24 +188,16 @@ export const PHYSICAL_ASSESSMENT = {
   eyebrow: "Avaliação física",
   title: "Conheça a sua composição corporal",
   intro:
-    "Medição do percentual de gordura com equipamento de bioimpedância. É feita à parte da consulta, para quem quer acompanhar de perto a própria evolução.",
+    "Medição do percentual de gordura com adipômetro, pelas dobras cutâneas. É feita à parte da consulta, para quem quer acompanhar de perto a própria evolução.",
   note: "A avaliação física é feita à parte da consulta. Valores e condições são informados no atendimento, pelo WhatsApp.",
   steps: [
     {
-      title: "Bioimpedância",
-      description: "Equipamento que mede o percentual de gordura corporal, de forma simples e sem dor.",
+      title: "Adipômetro",
+      description: "Equipamento que mede o percentual de gordura corporal, de forma simples, por meio das dobras cutâneas.",
     },
     {
       title: "Sem preparo para levar",
       description: "Você não precisa levar nada. É só comparecer ao horário agendado.",
-    },
-    {
-      title: "Anamnese",
-      description: "Uma conversa sobre o seu histórico, a sua rotina e os seus objetivos.",
-    },
-    {
-      title: "Exames, se necessário",
-      description: "Quando fizer sentido, a Evelyn pede exames para complementar a avaliação.",
     },
   ],
   message: "Olá Evelyn, vim pelo seu site e gostaria de agendar uma Avaliação Física.",
@@ -212,11 +215,16 @@ export const PROCESS_STEPS: readonly ProcessStep[] = [
   },
   {
     title: "Avaliação física",
-    description: "Quando faz sentido, medição de gordura por bioimpedância para conhecer o seu ponto de partida.",
+    description: "Quando faz sentido, medição de gordura com adipômetro para conhecer o seu ponto de partida.",
   },
   {
     title: "Plano personalizado",
     description: "Alimentação planejada para a sua fase de vida, sem fórmulas prontas.",
+  },
+  {
+    title: "Anamnese e exames",
+    description:
+      "Uma conversa sobre o seu histórico, a sua rotina e os seus objetivos. Quando fizer sentido, a Evelyn pede exames para complementar a avaliação.",
   },
   {
     title: "Acompanhamento",
@@ -253,7 +261,7 @@ export const FAQ: readonly FaqItem[] = [
   {
     question: "Como funciona a primeira consulta?",
     answer:
-      "Começamos com uma conversa sobre a sua rotina, histórico e objetivos, e, se você quiser, a avaliação física por bioimpedância, que é feita à parte. Ao final, você já sai sabendo os próximos passos.",
+      "Começamos com uma conversa sobre a sua rotina, histórico e objetivos, e, se você quiser, a avaliação física com adipômetro, que é feita à parte. Ao final, você já sai sabendo os próximos passos.",
   },
   {
     question: "Preciso querer emagrecer para ir à nutricionista?",
@@ -273,7 +281,7 @@ export const FAQ: readonly FaqItem[] = [
   {
     question: "Onde é o atendimento?",
     answer:
-      "Presencial na Clínica Popular Recanto, em Anápolis-GO, de segunda a sexta. Chame no WhatsApp para confirmar horários.",
+      "Presencial nas unidades da rede Clínica Popular Mais Saúde, de segunda a sexta, ou online. Chame no WhatsApp para encontrar a unidade mais perto de você e confirmar horários.",
   },
   {
     question: "Como agendo a minha consulta?",
@@ -282,14 +290,19 @@ export const FAQ: readonly FaqItem[] = [
   },
 ];
 
+const CLINIC_NAME = "Clínica Popular Mais Saúde";
+
+/** Link de busca do Google Maps (abre a página de localização da unidade) */
+function mapsSearchUrl(unit: string): string {
+  const query = encodeURIComponent(`${CLINIC_NAME} ${unit} Anápolis GO`);
+  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+}
+
 export const CLINIC = {
-  name: "Clínica Popular Recanto",
-  addressLines: [
-    "Av. João Florentino, Quadra 09, Lote 20",
-    "Residencial Portal do Cerrado",
-    "Anápolis - GO",
-  ],
+  name: CLINIC_NAME,
+  units: ["São Joaquim", "Jaiara Shopping", "Jundiaí", "Recanto do Sol"].map((name) => ({
+    name,
+    mapsUrl: mapsSearchUrl(name),
+  })),
   hours: "Segunda a sexta, com horário agendado",
-  mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Popular+Recanto+Av.+Jo%C3%A3o+Florentino+Quadra+09+Lote+20+Residencial+Portal+do+Cerrado+An%C3%A1polis+GO",
 } as const;
